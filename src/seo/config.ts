@@ -8,7 +8,7 @@ export const seoConfig = {
   siteTitle: 'Ahmed Mighri — Portfolio',
   author: 'Ahmed Mighri',
   jobTitle: 'Software Engineer & Full-Stack Developer',
-  url: 'https://ahmedmighri.com',
+  url: 'https://mighriahmed.github.io',
   defaultLocale: 'fr_TN',
   defaultLanguage: 'fr',
   availableLanguages: ['fr', 'en', 'ar'] as const,

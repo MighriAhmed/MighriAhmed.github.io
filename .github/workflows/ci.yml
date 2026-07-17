@@ -34,6 +34,6 @@ jobs:
           test -f dist/robots.txt
           test -f dist/sitemap-index.xml
           test -f dist/index.html
-          test -f dist/CNAME
-          grep -q "ahmedmighri.com" dist/robots.txt
-          grep -q "ahmedmighri.com" dist/sitemap-index.xml
+          test ! -f dist/CNAME
+          grep -q "mighriahmed.github.io" dist/robots.txt
+          grep -q "mighriahmed.github.io" dist/sitemap-index.xml
