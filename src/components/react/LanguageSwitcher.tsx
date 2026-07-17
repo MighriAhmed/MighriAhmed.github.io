@@ -4,7 +4,7 @@ import { Check, ChevronDown } from 'lucide-react';
 import { localeMeta, locales, type Locale } from '../../i18n/locales';
 import { applyDocumentLocale, applyDomTranslations, getStoredLocale, setLocale, t } from '../../i18n/runtime';
 
-function Flag({ code }: { code: 'fr' | 'gb' | 'tn' }) {
+function Flag({ code }: { code: 'fr' | 'gb' | 'tn' | 'de' }) {
   if (code === 'fr') {
     return (
       <svg viewBox="0 0 24 16" className="h-3.5 w-5 shrink-0 overflow-hidden rounded-[2px] shadow-sm" aria-hidden="true">
@@ -22,6 +22,15 @@ function Flag({ code }: { code: 'fr' | 'gb' | 'tn' }) {
         <path d="M0 0 L24 16 M24 0 L0 16" stroke="#C8102E" strokeWidth="1.5" />
         <path d="M12 0 V16 M0 8 H24" stroke="#fff" strokeWidth="5" />
         <path d="M12 0 V16 M0 8 H24" stroke="#C8102E" strokeWidth="2.5" />
+      </svg>
+    );
+  }
+  if (code === 'de') {
+    return (
+      <svg viewBox="0 0 24 16" className="h-3.5 w-5 shrink-0 overflow-hidden rounded-[2px] shadow-sm" aria-hidden="true">
+        <rect width="24" height="5.33" fill="#000" />
+        <rect y="5.33" width="24" height="5.34" fill="#DD0000" />
+        <rect y="10.67" width="24" height="5.33" fill="#FFCE00" />
       </svg>
     );
   }

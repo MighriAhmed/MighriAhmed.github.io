@@ -55,7 +55,7 @@ const extraSchemas = props.extraSchemas ?? [];
         try {
           var key = 'am-portfolio-locale';
           var stored = localStorage.getItem(key);
-          var locale = stored === 'en' || stored === 'ar' || stored === 'fr' ? stored : 'fr';
+          var locale = stored === 'en' || stored === 'ar' || stored === 'fr' || stored === 'de' ? stored : 'fr';
           var dir = locale === 'ar' ? 'rtl' : 'ltr';
           document.documentElement.lang = locale;
           document.documentElement.dir = dir;
