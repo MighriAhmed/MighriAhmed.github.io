@@ -1,0 +1,71 @@
+---
+import { skills, skillCategories } from '../../content/site';
+import SectionHeading from '../ui/SectionHeading.astro';
+import GlassCard from '../ui/GlassCard.astro';
+import { translate, type TranslationKey } from '../../i18n/translations';
+
+interface Props {
+  headingAs?: 'h1' | 'h2';
+}
+
+const { headingAs = 'h2' } = Astro.props;
+
+const categoriesToShow = skillCategories
+  .map((id) => ({
+    id,
+    labelKey: `skill.cat.${id}` as TranslationKey,
+    items: skills.filter((s) => s.category === id),
+  }))
+  .filter((cat) => cat.items.length > 0);
+---
+
+<section class="section-pad" id="skills">
+  <div class="container-site">
+    <div class="reveal">
+      <SectionHeading
+        eyebrow={translate('fr', 'skills.eyebrow')}
+        title={translate('fr', 'skills.title')}
+        description={translate('fr', 'skills.description')}
+        eyebrowKey="skills.eyebrow"
+        titleKey="skills.title"
+        descriptionKey="skills.description"
+        as={headingAs}
+      />
+    </div>
+
+    <div class="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+      {
+        categoriesToShow.map((category) => (
+          <div class="reveal h-full">
+            <GlassCard
+              class="group flex h-full flex-col !p-6 transition duration-300 hover:-translate-y-1 hover:border-[var(--color-border-glow)] hover:shadow-[0_0_40px_rgba(0,122,255,0.12),0_20px_50px_rgba(0,0,0,0.35)] md:!p-7"
+            >
+              <div class="mb-5 flex items-center gap-3 border-b border-white/10 pb-4">
+                <span
+                  class="h-2 w-2 shrink-0 rounded-full bg-[var(--color-accent)] shadow-[0_0_12px_rgba(0,122,255,0.7)] transition duration-300 group-hover:shadow-[0_0_18px_rgba(0,122,255,0.9)]"
+                  aria-hidden="true"
+                />
+                <h3
+                  class="font-display text-lg font-semibold tracking-tight text-white md:text-xl"
+                  data-i18n={category.labelKey}
+                >
+                  {translate('fr', category.labelKey)}
+                </h3>
+              </div>
+
+              <ul class="mt-auto flex flex-wrap gap-2">
+                {category.items.map((skill) => (
+                  <li>
+                    <span class="inline-flex items-center rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-sm text-[var(--color-muted)] transition duration-300 group-hover:border-[var(--color-accent)]/25 group-hover:bg-[var(--color-accent)]/10 group-hover:text-[var(--color-accent-soft)]">
+                      {skill.name}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </GlassCard>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

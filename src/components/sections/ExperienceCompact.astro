@@ -1,0 +1,53 @@
+---
+import { experience } from '../../content/site';
+import SectionHeading from '../ui/SectionHeading.astro';
+import GlassCard from '../ui/GlassCard.astro';
+import { translate, type TranslationKey } from '../../i18n/translations';
+---
+
+<div>
+  <SectionHeading
+    eyebrow={translate('fr', 'experience.eyebrow')}
+    title={translate('fr', 'experience.title')}
+    description={translate('fr', 'experience.description')}
+    eyebrowKey="experience.eyebrow"
+    titleKey="experience.title"
+    descriptionKey="experience.description"
+  />
+  <div class="relative" data-timeline>
+    <div
+      class="absolute left-[11px] top-2 bottom-2 w-px bg-gradient-to-b from-[var(--color-accent)] via-white/15 to-transparent"
+      aria-hidden="true"
+    >
+    </div>
+    <ol class="space-y-5">
+      {
+        experience.map((job) => {
+          const roleKey = `job.${job.id}.role` as TranslationKey;
+          return (
+            <li class="relative pl-10" data-timeline-item>
+              <span class="absolute left-0 top-5 h-6 w-6 rounded-full border-2 border-[var(--color-accent)] bg-[#050816] shadow-[0_0_20px_rgba(0,122,255,0.55)]" />
+              <GlassCard class="!p-5" glow>
+                <p class="text-xs text-[var(--color-accent-soft)]">
+                  {job.start} —{' '}
+                  {job.current ? (
+                    <span data-i18n="experience.present">{translate('fr', 'experience.present')}</span>
+                  ) : (
+                    job.end
+                  )}
+                </p>
+                <h3 class="mt-1 font-display text-lg font-semibold text-white" data-i18n={roleKey}>
+                  {translate('fr', roleKey)}
+                </h3>
+                <p class="text-sm text-[var(--color-muted)]">{job.company}</p>
+              </GlassCard>
+            </li>
+          );
+        })
+      }
+    </ol>
+    <a href="/experience" class="btn-ghost mt-6" data-magnetic>
+      <span data-i18n="experience.viewDetail">{translate('fr', 'experience.viewDetail')}</span>
+    </a>
+  </div>
+</div>

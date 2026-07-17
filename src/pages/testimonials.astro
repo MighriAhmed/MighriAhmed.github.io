@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeading from '../components/ui/SectionHeading.astro';
+import GlassCard from '../components/ui/GlassCard.astro';
+---
+
+<BaseLayout pageId="testimonials">
+  <section class="section-pad pt-36 md:pt-40">
+    <div class="container-site">
+      <div class="reveal">
+        <SectionHeading
+          eyebrow="Témoignages"
+          title="Ce que disent les collaborateurs"
+          description="Structure prête. Aucun témoignage inventé — cette section restera vide tant qu’aucune source n’est fournie."
+          as="h1"
+        />
+      </div>
+      <GlassCard class="reveal mx-auto max-w-2xl text-center" glow>
+        <p class="text-[var(--color-muted)]">
+          Ajoutez des citations clients dans <code class="text-[var(--color-accent-soft)]">src/content/site.ts</code> pour les afficher ici.
+        </p>
+      </GlassCard>
+    </div>
+  </section>
+</BaseLayout>

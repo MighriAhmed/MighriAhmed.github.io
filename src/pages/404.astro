@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout pageId="notFound">
+  <section class="flex min-h-[80vh] items-center justify-center pt-28">
+    <div class="container-site text-center">
+      <p class="font-display text-8xl font-bold text-gradient">404</p>
+      <h1 class="mt-4 font-display text-3xl font-semibold text-white">Page introuvable</h1>
+      <p class="mx-auto mt-4 max-w-md text-[var(--color-muted)]">
+        La page que vous cherchez n’existe pas ou a été déplacée.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/" class="btn-primary" data-magnetic>Retour à l’accueil</a>
+        <a href="/contact" class="btn-ghost" data-magnetic>Me contacter</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

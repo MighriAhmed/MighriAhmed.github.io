@@ -1,0 +1,142 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import GlassCard from '../../components/ui/GlassCard.astro';
+import { projects } from '../../content/site';
+import { seoConfig } from '../../seo/config';
+import { ArrowLeft, ExternalLink } from 'lucide-react';
+import { GitHubIcon } from '../../components/react/BrandIcons';
+
+export function getStaticPaths() {
+  return projects.map((project) => ({
+    params: { slug: project.slug },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const title = `${project.name} — Case Study | ${seoConfig.siteName}`;
+const description = project.tagline;
+const ogImage = project.image.endsWith('.svg') ? seoConfig.defaultImage : project.image;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={[project.name, ...project.technologies, 'Ahmed Mighri', 'Case Study', 'Portfolio']}
+  ogImage={ogImage}
+  type="article"
+  breadcrumbs={[
+    { name: 'Accueil', path: '/' },
+    { name: 'Projets', path: '/projects' },
+    { name: project.name, path: `/projects/${project.slug}` },
+  ]}
+  pageSchemaExtra={{
+    '@type': 'CreativeWork',
+    name: project.name,
+    description: project.description,
+    image: ogImage.startsWith('http') ? ogImage : new URL(ogImage, seoConfig.url).href,
+    url: new URL(`/projects/${project.slug}/`, seoConfig.url).href,
+    author: { '@id': `${seoConfig.url}/#person` },
+    keywords: project.technologies.join(', '),
+  }}
+>
+  <article class="section-pad pt-36 md:pt-40">
+    <div class="container-site max-w-5xl">
+      <a
+        href="/projects"
+        class="mb-8 inline-flex items-center gap-2 text-sm text-[var(--color-muted)] transition hover:text-white"
+      >
+        <ArrowLeft className="h-4 w-4" client:load />
+        Retour aux projets
+      </a>
+
+      <div class="reveal overflow-hidden rounded-[1.5rem] border border-white/10">
+        <img
+          src={project.image}
+          alt={`Visuel du projet ${project.name}`}
+          class="aspect-[21/9] w-full object-cover"
+          width={1400}
+          height={600}
+          loading="eager"
+        />
+      </div>
+
+      <header class="reveal mt-10">
+        <p class="text-sm text-[var(--color-accent-soft)]">{project.role}</p>
+        <h1 class="mt-2 font-display text-4xl font-bold tracking-tight text-white md:text-5xl">
+          {project.name}
+        </h1>
+        <p class="mt-4 max-w-3xl text-lg text-[var(--color-muted)]">{project.description}</p>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          {
+            project.github ? (
+              <a href={project.github} class="btn-ghost" target="_blank" rel="noopener noreferrer">
+                <GitHubIcon className="h-4 w-4" client:load />
+                GitHub
+              </a>
+            ) : (
+              <span
+                class="btn-ghost cursor-not-allowed opacity-50"
+                title="Lien GitHub non fourni dans le CV / LinkedIn"
+              >
+                <GitHubIcon className="h-4 w-4" client:load />
+                GitHub (non disponible)
+              </span>
+            )
+          }
+          {
+            project.liveUrl ? (
+              <a href={project.liveUrl} class="btn-primary" target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="h-4 w-4" client:load />
+                Live Demo
+              </a>
+            ) : (
+              <span class="btn-primary cursor-not-allowed opacity-50" title="URL live non fournie">
+                <ExternalLink className="h-4 w-4" client:load />
+                Live Demo (non disponible)
+              </span>
+            )
+          }
+        </div>
+      </header>
+
+      <div class="mt-10 flex flex-wrap gap-2">
+        {
+          project.technologies.map((tech) => (
+            <span class="rounded-full border border-[var(--color-accent)]/20 bg-[var(--color-accent)]/10 px-3 py-1 text-sm text-[var(--color-accent-soft)]">
+              {tech}
+            </span>
+          ))
+        }
+      </div>
+
+      <div class="mt-12 grid gap-6 md:grid-cols-3">
+        <GlassCard class="reveal" glow>
+          <h2 class="font-display text-lg font-semibold text-white">Fonctionnalités</h2>
+          <ul class="mt-4 space-y-2">
+            {project.features.map((f) => (
+              <li class="text-sm text-[var(--color-muted)]">• {f}</li>
+            ))}
+          </ul>
+        </GlassCard>
+        <GlassCard class="reveal" glow>
+          <h2 class="font-display text-lg font-semibold text-white">Défis</h2>
+          <ul class="mt-4 space-y-2">
+            {project.challenges.map((f) => (
+              <li class="text-sm text-[var(--color-muted)]">• {f}</li>
+            ))}
+          </ul>
+        </GlassCard>
+        <GlassCard class="reveal" glow>
+          <h2 class="font-display text-lg font-semibold text-white">Résultats</h2>
+          <ul class="mt-4 space-y-2">
+            {project.results.map((f) => (
+              <li class="text-sm text-[var(--color-muted)]">• {f}</li>
+            ))}
+          </ul>
+        </GlassCard>
+      </div>
+    </div>
+  </article>
+</BaseLayout>

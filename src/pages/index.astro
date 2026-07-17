@@ -1,0 +1,173 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/react/Hero';
+import Stats from '../components/sections/Stats.astro';
+import AboutPreview from '../components/sections/AboutPreview.astro';
+import SectionHeading from '../components/ui/SectionHeading.astro';
+import ProjectsGrid from '../components/react/ProjectsGrid';
+import SkillsGrid from '../components/sections/SkillsGrid.astro';
+import ServicesGrid from '../components/sections/ServicesGrid.astro';
+import ExperienceCompact from '../components/sections/ExperienceCompact.astro';
+import FAQ from '../components/react/FAQ';
+import ContactSection from '../components/sections/ContactSection.astro';
+import GlassCard from '../components/ui/GlassCard.astro';
+import { education } from '../content/site';
+import { translate } from '../i18n/translations';
+import { ArrowRight } from 'lucide-react';
+
+const educationKeys = {
+  master: {
+    degree: 'education.master.degree',
+    status: 'education.master.status',
+    school: 'education.school.esen',
+  },
+  licence: {
+    degree: 'education.licence.degree',
+    status: undefined,
+    school: 'education.school.esen',
+  },
+  bac: {
+    degree: 'education.bac.degree',
+    status: 'education.bac.status',
+    school: 'education.school.tunisia',
+  },
+} as const;
+---
+
+<BaseLayout
+  pageId="home"
+  extraSchemas={[
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'Quels types de projets prenez-vous en charge ?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Sites et applications web (WordPress, React), applications mobiles Flutter, SEO, automatisations n8n, intégrations API/IA, ainsi que des missions de marketing digital et de contenus.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Travaillez-vous en remote ?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Oui. Mon expérience inclut des missions hybrides et remote. Je suis basé à Soukra, Tunisie.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Comment démarrer un projet ?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Contactez-moi par email ou via le formulaire. Nous clarifions les objectifs, le périmètre et le planning.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Proposez-vous de la maintenance ?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Oui. J’assure la maintenance et l’évolution de sites, l’optimisation continue et le suivi des automatisations.',
+          },
+        },
+      ],
+    },
+  ]}
+>
+  <div id="home">
+    <Hero client:load />
+  </div>
+  <Stats />
+  <AboutPreview />
+
+  <section class="section-pad border-t border-white/5" id="formation">
+    <div class="container-site">
+      <div class="reveal">
+        <SectionHeading
+          eyebrow={translate('fr', 'formation.eyebrow')}
+          title={translate('fr', 'formation.title')}
+          description={translate('fr', 'formation.description')}
+          eyebrowKey="formation.eyebrow"
+          titleKey="formation.title"
+          descriptionKey="formation.description"
+        />
+      </div>
+      <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3" data-stagger>
+        {
+          education.map((ed) => {
+            const keys = educationKeys[ed.id as keyof typeof educationKeys];
+            return (
+              <GlassCard class="reveal" glow data-stagger-item>
+                <p class="text-sm text-[var(--color-accent-soft)]">
+                  {ed.start} — {ed.end}
+                  {keys?.status ? (
+                    <>
+                      {' · '}
+                      <span data-i18n={keys.status}>{translate('fr', keys.status)}</span>
+                    </>
+                  ) : null}
+                </p>
+                <h3
+                  class="mt-2 font-display text-xl font-semibold text-white"
+                  data-i18n={keys?.degree}
+                >
+                  {keys ? translate('fr', keys.degree) : ed.degree}
+                </h3>
+                <p class="mt-3 text-sm text-[var(--color-muted)]" data-i18n={keys?.school}>
+                  {keys ? translate('fr', keys.school) : ed.school}
+                </p>
+              </GlassCard>
+            );
+          })
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad border-t border-white/5" id="projects">
+    <div class="container-site">
+      <div class="reveal mb-8 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
+        <SectionHeading
+          eyebrow={translate('fr', 'projects.eyebrow')}
+          title={translate('fr', 'projects.title')}
+          description={translate('fr', 'projects.description')}
+          eyebrowKey="projects.eyebrow"
+          titleKey="projects.title"
+          descriptionKey="projects.description"
+        />
+        <a href="/projects" class="btn-ghost shrink-0" data-magnetic>
+          <span data-i18n="projects.viewAll">{translate('fr', 'projects.viewAll')}</span>
+          <ArrowRight className="h-4 w-4" client:load />
+        </a>
+      </div>
+      <ProjectsGrid client:load featuredOnly={true} />
+    </div>
+  </section>
+
+  <SkillsGrid />
+  <ServicesGrid />
+
+  <section class="section-pad border-t border-white/5" id="experience">
+    <div class="container-site grid gap-10 lg:grid-cols-2">
+      <div class="reveal">
+        <ExperienceCompact />
+      </div>
+      <div class="reveal">
+        <SectionHeading
+          eyebrow={translate('fr', 'faq.eyebrow')}
+          title={translate('fr', 'faq.title')}
+          description={translate('fr', 'faq.description')}
+          eyebrowKey="faq.eyebrow"
+          titleKey="faq.title"
+          descriptionKey="faq.description"
+        />
+        <FAQ client:load />
+      </div>
+    </div>
+  </section>
+
+  <ContactSection />
+</BaseLayout>

@@ -1,0 +1,109 @@
+---
+import { ArrowUp, Mail, MapPin, MessageCircle } from 'lucide-react';
+import { LinkedInIcon } from '../react/BrandIcons';
+import { footerLinks, siteConfig } from '../../content/site';
+import { translate } from '../../i18n/translations';
+---
+
+<footer class="relative border-t border-white/10 pt-16 pb-10">
+  <div class="container-site">
+    <div class="grid gap-10 md:grid-cols-3">
+      <div>
+        <a href="/" class="font-display text-2xl font-bold tracking-tight">
+          {siteConfig.shortName}<span class="text-[var(--color-accent)]">.</span>
+        </a>
+        <p class="mt-4 max-w-sm text-sm leading-relaxed text-[var(--color-muted)]" data-i18n="site.title">
+          {translate('fr', 'site.title')}
+        </p>
+        <p class="mt-4 inline-flex items-center gap-2 text-sm text-[var(--color-muted)]">
+          <MapPin className="h-4 w-4 text-[var(--color-accent)]" client:load />
+          <span data-i18n="location">{translate('fr', 'location')}</span>
+        </p>
+      </div>
+
+      <div>
+        <p class="mb-4 text-sm font-semibold text-white" data-i18n="footer.navigation">
+          {translate('fr', 'footer.navigation')}
+        </p>
+        <ul class="space-y-2">
+          {
+            footerLinks.map((link) => (
+              <li>
+                <a
+                  href={link.href}
+                  class="text-sm text-[var(--color-muted)] transition hover:text-white"
+                  data-i18n={link.labelKey}
+                >
+                  {translate('fr', link.labelKey)}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <div>
+        <p class="mb-4 text-sm font-semibold text-white" data-i18n="footer.contact">
+          {translate('fr', 'footer.contact')}
+        </p>
+        <ul class="space-y-3 text-sm text-[var(--color-muted)]">
+          <li>
+            <a href={siteConfig.socials.email} class="inline-flex items-center gap-2 hover:text-white">
+              <Mail className="h-4 w-4 text-[var(--color-accent)]" client:load />
+              {siteConfig.email}
+            </a>
+          </li>
+          <li>
+            <a
+              href={siteConfig.socials.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 hover:text-white"
+            >
+              <LinkedInIcon className="h-4 w-4 text-[var(--color-accent)]" client:load />
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a
+              href={siteConfig.socials.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 hover:text-white"
+            >
+              <MessageCircle className="h-4 w-4 text-[var(--color-accent)]" client:load />
+              WhatsApp
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="mt-12 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-6 sm:flex-row sm:items-center"
+    >
+      <p class="text-sm text-[var(--color-muted-2)]">
+        © {new Date().getFullYear()} {siteConfig.name}.{' '}
+        <span data-i18n="footer.rights">{translate('fr', 'footer.rights')}</span>
+      </p>
+      <p class="text-sm text-[var(--color-muted-2)]" data-i18n="footer.tagline">
+        {translate('fr', 'footer.tagline')}
+      </p>
+      <button
+        type="button"
+        id="back-to-top"
+        class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white transition hover:border-[var(--color-accent)] hover:bg-[var(--color-accent)]/10"
+        aria-label={translate('fr', 'footer.backTop')}
+        data-i18n-aria="footer.backTop"
+      >
+        <ArrowUp className="h-4 w-4" client:load />
+      </button>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('back-to-top')?.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>

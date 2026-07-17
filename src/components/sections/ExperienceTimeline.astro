@@ -1,0 +1,74 @@
+---
+import { experience } from '../../content/site';
+import SectionHeading from '../ui/SectionHeading.astro';
+import GlassCard from '../ui/GlassCard.astro';
+
+interface Props {
+  headingAs?: 'h1' | 'h2';
+}
+
+const { headingAs = 'h2' } = Astro.props;
+---
+
+<section class="section-pad" id="experience">
+  <div class="container-site">
+    <div class="reveal">
+      <SectionHeading
+        eyebrow="Parcours"
+        title="Expérience professionnelle"
+        description="Timeline issue du CV et de LinkedIn — les dates LinkedIn sont privilégiées en cas d’écart."
+        as={headingAs}
+      />
+    </div>
+
+    <div class="relative" data-timeline>
+      <div
+        class="absolute left-[11px] top-2 bottom-2 w-px bg-gradient-to-b from-[var(--color-accent)] via-white/15 to-transparent md:left-[15px]"
+        aria-hidden="true"
+      >
+      </div>
+      <ol class="space-y-6">
+        {
+          experience.map((job) => (
+            <li class="relative pl-10 md:pl-12" data-timeline-item>
+              <span class="absolute left-0 top-6 h-6 w-6 rounded-full border-2 border-[var(--color-accent)] bg-[#050816] shadow-[0_0_20px_rgba(0,122,255,0.55)] md:h-8 md:w-8 md:left-0" />
+              <GlassCard glow>
+                <div class="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+                  <div>
+                    <p class="text-sm text-[var(--color-accent-soft)]">
+                      {job.start} — {job.end}
+                      {job.current && (
+                        <span class="ml-2 rounded-full bg-[var(--color-success)]/15 px-2 py-0.5 text-xs text-[var(--color-success)]">
+                          Actuel
+                        </span>
+                      )}
+                    </p>
+                    <h3 class="mt-2 font-display text-xl font-semibold text-white md:text-2xl">
+                      {job.role}
+                    </h3>
+                    <p class="mt-1 text-[var(--color-muted)]">
+                      {job.company}
+                      {job.location ? ` · ${job.location}` : ''}
+                    </p>
+                  </div>
+                  <span class="rounded-full border border-white/10 px-3 py-1 text-xs text-[var(--color-muted-2)]">
+                    Source: {job.source}
+                  </span>
+                </div>
+                <p class="mt-4 text-sm leading-relaxed text-[var(--color-muted)]">{job.summary}</p>
+                <ul class="mt-4 space-y-2">
+                  {job.responsibilities.map((item) => (
+                    <li class="flex gap-2 text-sm text-white/85">
+                      <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-accent)]" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </GlassCard>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </div>
+</section>

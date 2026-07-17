@@ -1,0 +1,31 @@
+---
+import SectionHeading from '../ui/SectionHeading.astro';
+import ServicesCards from '../react/ServicesCards';
+import { translate } from '../../i18n/translations';
+
+interface Props {
+  headingAs?: 'h1' | 'h2';
+}
+
+const { headingAs = 'h2' } = Astro.props;
+---
+
+<section class="section-pad" id="services">
+  <div class="container-site">
+    <div class="reveal">
+      <SectionHeading
+        eyebrow={translate('fr', 'services.eyebrow')}
+        title={translate('fr', 'services.title')}
+        description={translate('fr', 'services.description')}
+        align="center"
+        eyebrowKey="services.eyebrow"
+        titleKey="services.title"
+        descriptionKey="services.description"
+        as={headingAs}
+      />
+    </div>
+    <div class="reveal">
+      <ServicesCards client:load />
+    </div>
+  </div>
+</section>

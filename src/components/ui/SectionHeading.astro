@@ -1,0 +1,62 @@
+---
+interface Props {
+  eyebrow?: string;
+  title: string;
+  description?: string;
+  align?: 'left' | 'center';
+  eyebrowKey?: string;
+  titleKey?: string;
+  descriptionKey?: string;
+  /** Use h1 for page-level titles; keep h2 for in-page sections. */
+  as?: 'h1' | 'h2';
+}
+
+const {
+  eyebrow,
+  title,
+  description,
+  align = 'left',
+  eyebrowKey,
+  titleKey,
+  descriptionKey,
+  as = 'h2',
+} = Astro.props;
+
+const HeadingTag = as;
+---
+
+<div class:list={['mb-8 md:mb-10', align === 'center' && 'mx-auto max-w-2xl text-center']}>
+  {
+    eyebrow && (
+      <p
+        class="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-[var(--color-accent-soft)]"
+        data-i18n={eyebrowKey}
+      >
+        {eyebrow}
+      </p>
+    )
+  }
+  <HeadingTag
+    class="font-display text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl"
+    data-i18n={titleKey}
+  >
+    {title}
+  </HeadingTag>
+  <div
+    class:list={[
+      'mt-4 h-1 w-16 rounded-full bg-gradient-to-r from-[var(--color-accent)] to-transparent',
+      align === 'center' && 'mx-auto',
+    ]}
+  >
+  </div>
+  {
+    description && (
+      <p
+        class="mt-5 text-base leading-relaxed text-[var(--color-muted)] md:text-lg"
+        data-i18n={descriptionKey}
+      >
+        {description}
+      </p>
+    )
+  }
+</div>

@@ -1,0 +1,59 @@
+---
+import { Mail, Phone } from 'lucide-react';
+import { LinkedInIcon } from '../react/BrandIcons';
+import { siteConfig } from '../../content/site';
+import SectionHeading from '../ui/SectionHeading.astro';
+import ContactForm from '../react/ContactForm';
+import { translate } from '../../i18n/translations';
+
+interface Props {
+  headingAs?: 'h1' | 'h2';
+}
+
+const { headingAs = 'h2' } = Astro.props;
+---
+
+<section class="section-pad" id="contact">
+  <div class="container-site">
+    <div class="glass glass-glow overflow-hidden rounded-[1.75rem] p-8 md:p-10 lg:p-12">
+      <div class="mx-auto max-w-2xl">
+        <SectionHeading
+          eyebrow={translate('fr', 'contact.eyebrow')}
+          title={translate('fr', 'contact.title')}
+          description={translate('fr', 'contact.description')}
+          eyebrowKey="contact.eyebrow"
+          titleKey="contact.title"
+          descriptionKey="contact.description"
+          as={headingAs}
+        />
+        <ContactForm client:load />
+
+        <ul class="mt-8 flex flex-col gap-3 text-sm text-[var(--color-muted)] sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-6 sm:gap-y-3">
+          <li>
+            <a href={siteConfig.socials.email} class="inline-flex items-center gap-2 hover:text-white">
+              <Mail className="h-4 w-4 text-[var(--color-accent)]" client:load />
+              {siteConfig.email}
+            </a>
+          </li>
+          <li>
+            <a href={siteConfig.phoneHref} class="inline-flex items-center gap-2 hover:text-white">
+              <Phone className="h-4 w-4 text-[var(--color-accent)]" client:load />
+              {siteConfig.phoneDisplay}
+            </a>
+          </li>
+          <li>
+            <a
+              href={siteConfig.socials.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 hover:text-white"
+            >
+              <LinkedInIcon className="h-4 w-4 text-[var(--color-accent)]" client:load />
+              linkedin.com/in/ahmed-mighri
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,99 @@
+---
+import '../styles/global.css';
+import { seoConfig, pagesSeo, type PageSeoId } from '../seo/config';
+import Navbar from '../components/layout/Navbar.astro';
+import Footer from '../components/layout/Footer.astro';
+import SEO from '../components/layout/SEO.astro';
+import CursorGlow from '../components/react/CursorGlow';
+import PageEffects from '../components/react/PageEffects';
+
+interface Props {
+  title?: string;
+  description?: string;
+  keywords?: string[];
+  ogImage?: string;
+  canonical?: string;
+  noindex?: boolean;
+  type?: 'website' | 'article' | 'profile';
+  pageId?: PageSeoId;
+  breadcrumbs?: { name: string; path: string }[];
+  pageSchemaExtra?: Record<string, unknown>;
+  extraSchemas?: Record<string, unknown>[];
+}
+
+const pathname = Astro.url.pathname;
+const props = Astro.props;
+const pageDefaults = props.pageId ? pagesSeo[props.pageId] : undefined;
+
+const title = props.title ?? pageDefaults?.title ?? seoConfig.defaultTitle;
+const description =
+  props.description ?? pageDefaults?.description ?? seoConfig.defaultDescription;
+const keywords = props.keywords ?? pageDefaults?.keywords ?? [...seoConfig.defaultKeywords];
+const ogImage = props.ogImage ?? pageDefaults?.ogImage ?? seoConfig.defaultImage;
+const canonical = props.canonical;
+const noindex = props.noindex ?? pageDefaults?.noindex ?? false;
+const type = props.type ?? pageDefaults?.type ?? 'website';
+const breadcrumbs = props.breadcrumbs ?? pageDefaults?.breadcrumbs ?? [];
+const pageSchemaExtra = props.pageSchemaExtra;
+const extraSchemas = props.extraSchemas ?? [];
+---
+
+<!doctype html>
+<html lang={seoConfig.defaultLanguage}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script is:inline>
+      (function () {
+        try {
+          var key = 'am-portfolio-locale';
+          var stored = localStorage.getItem(key);
+          var locale = stored === 'en' || stored === 'ar' || stored === 'fr' ? stored : 'fr';
+          var dir = locale === 'ar' ? 'rtl' : 'ltr';
+          document.documentElement.lang = locale;
+          document.documentElement.dir = dir;
+          document.documentElement.dataset.locale = locale;
+          if (locale === 'ar') document.documentElement.classList.add('font-arabic');
+        } catch (e) {}
+      })();
+    </script>
+    <SEO
+      title={title}
+      description={description}
+      keywords={[...keywords]}
+      ogImage={ogImage}
+      canonical={canonical}
+      noindex={noindex}
+      type={type}
+      pathname={pathname}
+      breadcrumbs={breadcrumbs}
+      pageSchemaExtra={pageSchemaExtra}
+      extraSchemas={extraSchemas}
+    />
+  </head>
+  <body>
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[10001] focus:rounded-full focus:bg-[var(--color-accent)] focus:px-4 focus:py-2 focus:text-white"
+      data-i18n="skip"
+    >
+      Aller au contenu
+    </a>
+
+    <Navbar />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+
+    <CursorGlow client:load />
+    <PageEffects client:load />
+  </body>
+</html>

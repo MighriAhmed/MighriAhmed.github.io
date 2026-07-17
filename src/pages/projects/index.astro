@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeading from '../../components/ui/SectionHeading.astro';
+import ProjectsGrid from '../../components/react/ProjectsGrid';
+---
+
+<BaseLayout pageId="projects">
+  <section class="section-pad pt-36 md:pt-40">
+    <div class="container-site">
+      <div class="reveal">
+        <SectionHeading
+          eyebrow="Portfolio"
+          title="Mes projets"
+          description="Sélection de projets web, SEO et automatisation réalisés pour des clients et entreprises."
+          as="h1"
+        />
+      </div>
+      <ProjectsGrid client:load />
+    </div>
+  </section>
+</BaseLayout>

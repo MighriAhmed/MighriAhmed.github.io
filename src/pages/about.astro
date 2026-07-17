@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeading from '../components/ui/SectionHeading.astro';
+import GlassCard from '../components/ui/GlassCard.astro';
+import ExperienceTimeline from '../components/sections/ExperienceTimeline.astro';
+import { profile, education } from '../content/site';
+---
+
+<BaseLayout pageId="about">
+  <section class="section-pad pt-36 md:pt-40">
+    <div class="container-site">
+      <div class="reveal mx-auto max-w-3xl text-center">
+        <SectionHeading
+          eyebrow="À propos"
+          title="Qui je suis"
+          description={profile.role}
+          align="center"
+          as="h1"
+        />
+      </div>
+
+      <div class="reveal mx-auto mt-4 max-w-3xl space-y-6 text-base leading-relaxed text-[var(--color-muted)] md:text-lg">
+        <p>{profile.intro}</p>
+        <p>{profile.linkedInAbout}</p>
+      </div>
+
+      <div class="mt-16 grid gap-6 md:grid-cols-2" data-stagger>
+        <GlassCard class="reveal" glow data-stagger-item>
+          <h3 class="font-display text-xl font-semibold text-white">Mission</h3>
+          <p class="mt-4 text-sm leading-relaxed text-[var(--color-muted)] md:text-base">
+            {profile.mission}
+          </p>
+        </GlassCard>
+        <GlassCard class="reveal" glow data-stagger-item>
+          <h3 class="font-display text-xl font-semibold text-white">Ce que je fais</h3>
+          <ul class="mt-4 space-y-2">
+            {
+              profile.focuses.map((f) => (
+                <li class="text-sm text-[var(--color-muted)] md:text-base">• {f}</li>
+              ))
+            }
+          </ul>
+        </GlassCard>
+      </div>
+
+      <div class="mt-16">
+        <div class="reveal">
+          <SectionHeading eyebrow="Valeurs" title="Ce qui guide mon travail" />
+        </div>
+        <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-4" data-stagger>
+          {
+            profile.values.map((value) => (
+              <GlassCard class="reveal" data-stagger-item>
+                <h3 class="font-display text-lg font-semibold text-white">{value.title}</h3>
+                <p class="mt-3 text-sm leading-relaxed text-[var(--color-muted)]">{value.description}</p>
+              </GlassCard>
+            ))
+          }
+        </div>
+      </div>
+
+      <div class="mt-16">
+        <div class="reveal">
+          <SectionHeading eyebrow="Formation" title="Éducation" />
+        </div>
+        <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3" data-stagger>
+          {
+            education.map((ed) => (
+              <GlassCard class="reveal" glow data-stagger-item>
+                <p class="text-sm text-[var(--color-accent-soft)]">
+                  {ed.start} — {ed.end}
+                  {ed.status ? ` · ${ed.status}` : ''}
+                </p>
+                <h3 class="mt-2 font-display text-xl font-semibold text-white">{ed.degree}</h3>
+                {ed.specialty && (
+                  <p class="mt-1 text-sm text-white/80">Spécialité {ed.specialty}</p>
+                )}
+                <p class="mt-3 text-sm text-[var(--color-muted)]">{ed.school}</p>
+              </GlassCard>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="border-t border-white/5">
+    <ExperienceTimeline />
+  </div>
+</BaseLayout>

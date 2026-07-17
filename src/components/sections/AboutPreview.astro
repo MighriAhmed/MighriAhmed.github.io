@@ -1,0 +1,166 @@
+---
+import { Check, ArrowRight, Code2, Smartphone, Sparkles, Workflow, Search } from 'lucide-react';
+import { siteConfig } from '../../content/site';
+import SectionHeading from '../ui/SectionHeading.astro';
+import { translate } from '../../i18n/translations';
+
+const expertise = [
+  { key: 'about.expertise.0', icon: 'code' },
+  { key: 'about.expertise.1', icon: 'mobile' },
+  { key: 'about.expertise.2', icon: 'ai' },
+  { key: 'about.expertise.3', icon: 'workflow' },
+  { key: 'about.expertise.4', icon: 'seo' },
+] as const;
+
+const focuses = [
+  'about.focus.0',
+  'about.focus.1',
+  'about.focus.2',
+  'about.focus.3',
+  'about.focus.4',
+] as const;
+
+const stack = [
+  'React',
+  'Flutter',
+  'Python',
+  'FastAPI',
+  'WordPress',
+  'Astro',
+  'Tailwind CSS',
+  'PostgreSQL',
+  'Docker',
+  'Git',
+  'n8n',
+  'AI',
+];
+---
+
+<section class="section-pad" id="about">
+  <div class="container-site grid items-center gap-10 lg:grid-cols-2">
+    <div class="reveal">
+      <SectionHeading
+        eyebrow={translate('fr', 'about.eyebrow')}
+        title={translate('fr', 'about.title')}
+        description={translate('fr', 'about.description')}
+        eyebrowKey="about.eyebrow"
+        titleKey="about.title"
+        descriptionKey="about.description"
+      />
+      <p class="text-base leading-relaxed text-[var(--color-muted)] md:text-lg" data-i18n="about.intro">
+        {translate('fr', 'about.intro')}
+      </p>
+      <ul class="mt-8 space-y-3">
+        {
+          focuses.map((key) => (
+            <li class="flex items-start gap-3 text-sm text-white/90 md:text-base">
+              <span class="mt-0.5 rounded-full bg-[var(--color-accent)]/15 p-1 text-[var(--color-accent-soft)]">
+                <Check className="h-4 w-4" client:load />
+              </span>
+              <span data-i18n={key}>{translate('fr', key)}</span>
+            </li>
+          ))
+        }
+      </ul>
+      <a href="/about" class="btn-primary mt-8" data-magnetic>
+        <span data-i18n="about.cta">{translate('fr', 'about.cta')}</span>
+        <ArrowRight className="h-4 w-4" client:load />
+      </a>
+    </div>
+
+    <div class="reveal relative">
+      <article
+        data-tilt
+        class="brand-card group relative overflow-hidden rounded-[1.5rem] border border-white/10 bg-[linear-gradient(160deg,rgba(15,26,58,0.92)_0%,rgba(5,8,22,0.96)_55%,rgba(10,16,36,0.9)_100%)] p-6 shadow-[0_24px_80px_rgba(0,0,0,0.45)] transition duration-500 hover:border-[var(--color-border-glow)] hover:shadow-[0_0_50px_rgba(0,122,255,0.18),0_24px_80px_rgba(0,0,0,0.45)] md:p-8"
+      >
+        <div
+          class="pointer-events-none absolute inset-0 opacity-70"
+          style="background-image: linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px); background-size: 42px 42px; mask-image: radial-gradient(ellipse at center, black 35%, transparent 80%);"
+          aria-hidden="true"
+        >
+        </div>
+        <div
+          class="pointer-events-none absolute -left-16 -top-20 h-56 w-56 rounded-full bg-[var(--color-accent)]/25 blur-3xl transition duration-700 group-hover:bg-[var(--color-accent)]/35"
+          aria-hidden="true"
+        >
+        </div>
+        <div
+          class="pointer-events-none absolute -bottom-24 -right-10 h-64 w-64 rounded-full bg-[var(--color-accent-soft)]/15 blur-3xl"
+          aria-hidden="true"
+        >
+        </div>
+
+        <div class="relative">
+          <div class="mb-6 flex items-start justify-between gap-4">
+            <div>
+              <p
+                class="text-xs font-medium uppercase tracking-[0.22em] text-[var(--color-accent-soft)]"
+                data-i18n="about.brand.eyebrow"
+              >
+                {translate('fr', 'about.brand.eyebrow')}
+              </p>
+              <h3 class="mt-3 font-display text-3xl font-bold tracking-tight text-white md:text-4xl">
+                {siteConfig.name}
+              </h3>
+              <p
+                class="mt-2 text-sm font-medium text-[var(--color-muted)] md:text-base"
+                data-i18n="about.brand.role"
+              >
+                {translate('fr', 'about.brand.role')}
+              </p>
+            </div>
+            <div
+              class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-[var(--color-accent)]/25 bg-[var(--color-accent)]/10 font-display text-sm font-bold text-white shadow-[0_0_24px_rgba(0,122,255,0.25)]"
+            >
+              {siteConfig.shortName}<span class="text-[var(--color-accent)]">.</span>
+            </div>
+          </div>
+
+          <div class="mb-6 h-px w-full bg-gradient-to-r from-[var(--color-accent)]/50 via-white/10 to-transparent">
+          </div>
+
+          <p
+            class="mb-3 text-xs font-medium uppercase tracking-[0.18em] text-[var(--color-muted-2)]"
+            data-i18n="about.brand.expertise"
+          >
+            {translate('fr', 'about.brand.expertise')}
+          </p>
+          <ul class="mb-7 space-y-2.5">
+            {
+              expertise.map((item) => (
+                <li class="flex items-center gap-3 rounded-xl border border-white/5 bg-white/[0.03] px-3 py-2.5 transition duration-300 group-hover:border-white/10 group-hover:bg-white/[0.045]">
+                  <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg border border-[var(--color-accent)]/20 bg-[var(--color-accent)]/10 text-[var(--color-accent-soft)]">
+                    {item.icon === 'code' && <Code2 className="h-4 w-4" client:load />}
+                    {item.icon === 'mobile' && <Smartphone className="h-4 w-4" client:load />}
+                    {item.icon === 'ai' && <Sparkles className="h-4 w-4" client:load />}
+                    {item.icon === 'workflow' && <Workflow className="h-4 w-4" client:load />}
+                    {item.icon === 'seo' && <Search className="h-4 w-4" client:load />}
+                  </span>
+                  <span class="text-sm font-medium text-white/90" data-i18n={item.key}>
+                    {translate('fr', item.key)}
+                  </span>
+                </li>
+              ))
+            }
+          </ul>
+
+          <p
+            class="mb-3 text-xs font-medium uppercase tracking-[0.18em] text-[var(--color-muted-2)]"
+            data-i18n="about.brand.stack"
+          >
+            {translate('fr', 'about.brand.stack')}
+          </p>
+          <div class="flex flex-wrap gap-2">
+            {
+              stack.map((tech) => (
+                <span class="rounded-full border border-[var(--color-accent)]/20 bg-[var(--color-accent)]/10 px-3 py-1.5 text-xs font-medium text-[var(--color-accent-soft)] transition duration-300 hover:border-[var(--color-accent)]/45 hover:bg-[var(--color-accent)]/18 hover:text-white">
+                  {tech}
+                </span>
+              ))
+            }
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

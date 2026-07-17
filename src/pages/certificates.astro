@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeading from '../components/ui/SectionHeading.astro';
+import GlassCard from '../components/ui/GlassCard.astro';
+---
+
+<BaseLayout pageId="certificates">
+  <section class="section-pad pt-36 md:pt-40">
+    <div class="container-site">
+      <div class="reveal">
+        <SectionHeading
+          eyebrow="Certifications"
+          title="Certificats & accréditations"
+          description="Page préparée. Aucune certification n’est documentée dans le CV ou le profil LinkedIn fournis."
+          as="h1"
+        />
+      </div>
+      <GlassCard class="reveal mx-auto max-w-2xl text-center" glow>
+        <p class="text-[var(--color-muted)]">
+          Dès que des certificats seront ajoutés aux sources, ils apparaîtront ici avec badge,
+          organisme et date.
+        </p>
+      </GlassCard>
+    </div>
+  </section>
+</BaseLayout>

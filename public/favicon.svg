@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#050816"/>
+  <rect x="1" y="1" width="62" height="62" rx="15" stroke="#007AFF" stroke-opacity="0.5"/>
+  <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle" font-family="Syne, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">AM</text>
+  <circle cx="48" cy="44" r="3" fill="#007AFF"/>
+</svg>

@@ -1,0 +1,17 @@
+---
+interface Props {
+  class?: string;
+  glow?: boolean;
+  as?: 'div' | 'article' | 'section';
+  [key: string]: unknown;
+}
+
+const { class: className = '', glow = false, as: Tag = 'div', ...rest } = Astro.props;
+---
+
+<Tag
+  class:list={['glass rounded-[var(--radius-card)] p-6 md:p-8', glow && 'glass-glow', className]}
+  {...rest}
+>
+  <slot />
+</Tag>

@@ -1,0 +1,188 @@
+---
+import { seoConfig, absoluteUrl, normalizePathname } from '../../seo/config';
+
+interface BreadcrumbItem {
+  name: string;
+  path: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  keywords?: string[];
+  ogImage?: string;
+  canonical?: string;
+  noindex?: boolean;
+  type?: 'website' | 'article' | 'profile';
+  pathname: string;
+  breadcrumbs?: BreadcrumbItem[];
+  pageSchemaExtra?: Record<string, unknown>;
+  extraSchemas?: Record<string, unknown>[];
+}
+
+const {
+  title,
+  description,
+  keywords = [...seoConfig.defaultKeywords],
+  ogImage = seoConfig.defaultImage,
+  canonical,
+  noindex = false,
+  type = 'website',
+  pathname,
+  breadcrumbs = [],
+  pageSchemaExtra,
+  extraSchemas = [],
+} = Astro.props;
+
+const cleanPath = normalizePathname(pathname);
+const canonicalURL = canonical
+  ? new URL(canonical, seoConfig.url)
+  : new URL(cleanPath === '/' ? '/' : `${cleanPath}/`, seoConfig.url);
+
+const imagePath = ogImage.startsWith('http') ? ogImage : ogImage;
+const imageURL = absoluteUrl(imagePath);
+const siteName = seoConfig.siteTitle;
+const ogType = type === 'article' ? 'article' : type === 'profile' ? 'profile' : 'website';
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': `${seoConfig.url}/#person`,
+  name: seoConfig.author,
+  url: seoConfig.url,
+  image: absoluteUrl('/images/ahmed-mighri.png'),
+  email: seoConfig.contact.email,
+  telephone: seoConfig.contact.phone,
+  jobTitle: seoConfig.jobTitle,
+  description: seoConfig.defaultDescription,
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: seoConfig.contact.locality,
+    addressRegion: seoConfig.contact.region,
+    addressCountry: seoConfig.contact.country,
+  },
+  sameAs: [seoConfig.socials.linkedin, seoConfig.socials.whatsapp].filter(Boolean),
+  alumniOf: {
+    '@type': 'CollegeOrUniversity',
+    name: 'ESEN Manouba',
+  },
+  knowsLanguage: seoConfig.availableLanguages,
+};
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${seoConfig.url}/#website`,
+  name: siteName,
+  url: seoConfig.url,
+  description: seoConfig.defaultDescription,
+  inLanguage: seoConfig.availableLanguages,
+  publisher: { '@id': `${seoConfig.url}/#person` },
+  author: { '@id': `${seoConfig.url}/#person` },
+};
+
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': type === 'article' ? 'Article' : 'WebPage',
+  '@id': `${canonicalURL.href}#webpage`,
+  url: canonicalURL.href,
+  name: title,
+  description,
+  isPartOf: { '@id': `${seoConfig.url}/#website` },
+  about: { '@id': `${seoConfig.url}/#person` },
+  inLanguage: seoConfig.defaultLanguage,
+  primaryImageOfPage: {
+    '@type': 'ImageObject',
+    url: imageURL,
+    width: seoConfig.defaultImageWidth,
+    height: seoConfig.defaultImageHeight,
+  },
+  ...(type === 'article'
+    ? {
+        author: { '@id': `${seoConfig.url}/#person` },
+        headline: title,
+      }
+    : {}),
+  ...pageSchemaExtra,
+};
+
+const breadcrumbSchema =
+  breadcrumbs.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: breadcrumbs.map((item, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          name: item.name,
+          item: absoluteUrl(item.path === '/' ? '/' : `${item.path.replace(/\/$/, '')}/`),
+        })),
+      }
+    : null;
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<meta name="author" content={seoConfig.author} />
+{keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
+<meta name="language" content={seoConfig.defaultLanguage} />
+<meta http-equiv="content-language" content={seoConfig.defaultLanguage} />
+{
+  noindex ? (
+    <meta name="robots" content="noindex, nofollow" />
+  ) : (
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  )
+}
+<link rel="canonical" href={canonicalURL.href} />
+
+{/* Multilingual awareness (single URL, client-side locale switch) */}
+<link rel="alternate" hreflang={seoConfig.defaultLanguage} href={canonicalURL.href} />
+<link rel="alternate" hreflang="x-default" href={canonicalURL.href} />
+{seoConfig.availableLanguages.filter((l) => l !== seoConfig.defaultLanguage).map((lang) => (
+  <link rel="alternate" hreflang={lang} href={canonicalURL.href} />
+))}
+
+<meta property="og:type" content={ogType} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonicalURL.href} />
+<meta property="og:site_name" content={siteName} />
+<meta property="og:locale" content={seoConfig.defaultLocale} />
+{seoConfig.alternateLocales.map((locale) => (
+  <meta property="og:locale:alternate" content={locale} />
+))}
+<meta property="og:image" content={imageURL} />
+<meta property="og:image:secure_url" content={imageURL} />
+<meta property="og:image:type" content={imageURL.endsWith('.png') ? 'image/png' : imageURL.endsWith('.jpg') || imageURL.endsWith('.jpeg') ? 'image/jpeg' : imageURL.endsWith('.webp') ? 'image/webp' : 'image/svg+xml'} />
+<meta property="og:image:width" content={String(seoConfig.defaultImageWidth)} />
+<meta property="og:image:height" content={String(seoConfig.defaultImageHeight)} />
+<meta property="og:image:alt" content={seoConfig.defaultImageAlt} />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageURL} />
+<meta name="twitter:image:alt" content={seoConfig.defaultImageAlt} />
+{seoConfig.twitterHandle && <meta name="twitter:site" content={seoConfig.twitterHandle} />}
+{seoConfig.twitterHandle && <meta name="twitter:creator" content={seoConfig.twitterHandle} />}
+
+<meta name="theme-color" content={seoConfig.themeColor} />
+<meta name="color-scheme" content="dark" />
+<meta name="format-detection" content="telephone=yes" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="mask-icon" href="/favicon.svg" color={seoConfig.themeColor} />
+
+<script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(webPageSchema)} />
+{breadcrumbSchema && (
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+)}
+{extraSchemas.map((schema) => (
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+))}

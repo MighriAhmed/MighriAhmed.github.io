@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Thin / placeholder pages
+Disallow: /blog
+Disallow: /testimonials
+Disallow: /certificates
+
+Sitemap: https://ahmedmighri.com/sitemap-index.xml
