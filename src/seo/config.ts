@@ -21,11 +21,11 @@ export const seoConfig = {
   twitterHandle: '',
   socials: {
     linkedin: 'https://www.linkedin.com/in/ahmed-mighri/',
-    email: 'mailto:ahmedmighri@esen.tn',
+    email: 'mailto:ahmedmighri0@gmail.com',
     whatsapp: 'https://wa.me/21625243423',
   },
   contact: {
-    email: 'ahmedmighri@esen.tn',
+    email: 'ahmedmighri0@gmail.com',
     phone: '+216 25 243 423',
     locality: 'Soukra',
     region: 'Ariana',

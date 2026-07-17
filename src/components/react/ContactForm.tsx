@@ -1,28 +1,60 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { CheckCircle2, Send } from 'lucide-react';
+import { CheckCircle2, Send, AlertCircle } from 'lucide-react';
 import { siteConfig } from '../../content/site';
 import { useLocale } from '../../i18n/useLocale';
 
+type Status = 'idle' | 'sending' | 'sent' | 'error';
+
 export default function ContactForm() {
-  const [status, setStatus] = useState<'idle' | 'sending' | 'sent'>('idle');
+  const [status, setStatus] = useState<Status>('idle');
   const { t, locale } = useLocale();
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setStatus('sending');
+    if (status === 'sending') return;
+
     const form = e.currentTarget;
     const data = new FormData(form);
-    const name = String(data.get('name') || '');
-    const email = String(data.get('email') || '');
-    const message = String(data.get('message') || '');
-    const subject = encodeURIComponent(`Portfolio contact — ${name}`);
-    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+    const name = String(data.get('name') || '').trim();
+    const email = String(data.get('email') || '').trim();
+    const subject = String(data.get('subject') || '').trim();
+    const message = String(data.get('message') || '').trim();
 
-    window.setTimeout(() => {
+    if (!name || !email || !message) {
+      setStatus('error');
+      return;
+    }
+
+    setStatus('sending');
+
+    try {
+      const response = await fetch(`https://formsubmit.co/ajax/${siteConfig.email}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+          _subject: subject
+            ? `Portfolio — ${subject}`
+            : `Portfolio contact — ${name}`,
+          _template: 'table',
+          _captcha: 'false',
+          _replyto: email,
+        }),
+      });
+
+      if (!response.ok) throw new Error(`FormSubmit failed: ${response.status}`);
+
       setStatus('sent');
-      window.location.href = `mailto:${siteConfig.email}?subject=${subject}&body=${body}`;
-    }, 600);
+      form.reset();
+    } catch {
+      setStatus('error');
+    }
   };
 
   return (
@@ -71,6 +103,9 @@ export default function ContactForm() {
         />
       </label>
 
+      {/* Honeypot anti-spam (hidden from users) */}
+      <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" aria-hidden="true" />
+
       <button type="submit" disabled={status === 'sending'} className="btn-primary" data-magnetic>
         <Send className="h-4 w-4" />
         {status === 'sending' ? t('contact.sending') : t('contact.send')}
@@ -86,6 +121,17 @@ export default function ContactForm() {
           >
             <CheckCircle2 className="h-4 w-4" />
             {t('contact.sent')}
+          </motion.p>
+        )}
+        {status === 'error' && (
+          <motion.p
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            className="inline-flex items-center gap-2 text-sm text-red-400"
+          >
+            <AlertCircle className="h-4 w-4" />
+            {t('contact.error')}
           </motion.p>
         )}
       </AnimatePresence>

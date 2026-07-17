@@ -182,8 +182,9 @@ const fr = {
   'contact.subjectPh': 'Projet, collaboration…',
   'contact.messagePh': 'Parlez-moi de votre projet…',
   'contact.send': 'Envoyer le message',
-  'contact.sending': 'Ouverture…',
-  'contact.sent': 'Votre client mail va s’ouvrir pour finaliser l’envoi.',
+  'contact.sending': 'Envoi en cours…',
+  'contact.sent': 'Message envoyé — je vous répondrai bientôt.',
+  'contact.error': 'Envoi impossible. Réessayez ou écrivez-moi directement par email.',
 } as const;
 
 export type TranslationKey = keyof typeof fr;
@@ -370,8 +371,9 @@ const en: Record<TranslationKey, string> = {
   'contact.subjectPh': 'Project, collaboration…',
   'contact.messagePh': 'Tell me about your project…',
   'contact.send': 'Send message',
-  'contact.sending': 'Opening…',
-  'contact.sent': 'Your mail client will open to finalize sending.',
+  'contact.sending': 'Sending…',
+  'contact.sent': 'Message sent — I will get back to you soon.',
+  'contact.error': 'Could not send. Please try again or email me directly.',
 };
 
 const ar: Record<TranslationKey, string> = {
@@ -555,8 +557,9 @@ const ar: Record<TranslationKey, string> = {
   'contact.subjectPh': 'مشروع، تعاون…',
   'contact.messagePh': 'أخبرني عن مشروعك…',
   'contact.send': 'إرسال الرسالة',
-  'contact.sending': 'جاري الفتح…',
-  'contact.sent': 'سيُفتح تطبيق البريد لإتمام الإرسال.',
+  'contact.sending': 'جاري الإرسال…',
+  'contact.sent': 'تم إرسال الرسالة — سأرد عليك قريباً.',
+  'contact.error': 'تعذر الإرسال. حاول مرة أخرى أو راسلني مباشرة بالبريد.',
 };
 
 export const translations: Record<Locale, Record<TranslationKey, string>> = {

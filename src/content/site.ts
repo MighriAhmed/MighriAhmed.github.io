@@ -6,14 +6,14 @@
 export const siteConfig = {
   name: 'Ahmed Mighri',
   shortName: 'AM',
-  email: 'ahmedmighri@esen.tn',
+  email: 'ahmedmighri0@gmail.com',
   phoneDisplay: '+216 25 243 423',
   phoneHref: 'tel:+21625243423',
   cvPath: '/MIGHRI_AHMED-CV.pdf',
   cvFileName: 'MIGHRI_AHMED CV.pdf',
   socials: {
     linkedin: 'https://www.linkedin.com/in/ahmed-mighri/',
-    email: 'mailto:ahmedmighri@esen.tn',
+    email: 'mailto:ahmedmighri0@gmail.com',
     whatsapp: 'https://wa.me/21625243423',
   },
 } as const;
