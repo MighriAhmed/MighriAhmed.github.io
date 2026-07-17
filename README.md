@@ -10,7 +10,7 @@ Production site: [https://mighriahmed.github.io](https://mighriahmed.github.io)
 - Multilingual UI (FR / EN / AR)
 - Project showcase, experience, skills, services, contact
 - SEO: metadata, Open Graph, JSON-LD, sitemap, `robots.txt`
-- Downloadable CV (`public/Ahmed-Mighri-CV.pdf`)
+- Downloadable CV (`public/MIGHRI_AHMED-CV.pdf`)
 
 ## Requirements
 

@@ -9,7 +9,8 @@ export const siteConfig = {
   email: 'ahmedmighri@esen.tn',
   phoneDisplay: '+216 25 243 423',
   phoneHref: 'tel:+21625243423',
-  cvPath: '/Ahmed-Mighri-CV.pdf',
+  cvPath: '/MIGHRI_AHMED-CV.pdf',
+  cvFileName: 'MIGHRI_AHMED CV.pdf',
   socials: {
     linkedin: 'https://www.linkedin.com/in/ahmed-mighri/',
     email: 'mailto:ahmedmighri@esen.tn',
@@ -212,46 +213,113 @@ export type Skill = {
     | 'database'
     | 'devops'
     | 'cms'
-    | 'marketing'
     | 'automation'
+    | 'marketing'
     | 'design'
+    | 'testing'
+    | 'methods'
     | 'soft'
     | 'languages';
 };
 
-/** Skills extracted from CV + LinkedIn only. */
+/** Skills displayed in the Compétences grid. */
 export const skills: Skill[] = [
+  // Frontend
+  { name: 'HTML5', category: 'frontend' },
+  { name: 'CSS3', category: 'frontend' },
+  { name: 'JavaScript (ES6+)', category: 'frontend' },
+  { name: 'TypeScript', category: 'frontend' },
   { name: 'React.js', category: 'frontend' },
+  { name: 'Astro', category: 'frontend' },
   { name: 'Tailwind CSS', category: 'frontend' },
   { name: 'Material UI', category: 'frontend' },
-  { name: 'CSS', category: 'frontend' },
+  { name: 'Bootstrap', category: 'frontend' },
   { name: 'Responsive Design', category: 'frontend' },
+  // Backend
+  { name: 'Java', category: 'backend' },
   { name: 'Spring Boot', category: 'backend' },
-  { name: 'REST APIs', category: 'backend' },
   { name: 'Spring Security', category: 'backend' },
+  { name: 'REST APIs', category: 'backend' },
+  { name: 'FastAPI', category: 'backend' },
+  { name: 'Python', category: 'backend' },
+  { name: 'JWT Authentication', category: 'backend' },
   { name: 'Axios', category: 'backend' },
+  { name: 'Swagger / OpenAPI', category: 'backend' },
+  // Mobile
   { name: 'Flutter', category: 'mobile' },
+  { name: 'Dart', category: 'mobile' },
+  { name: 'Firebase', category: 'mobile' },
+  // Database
+  { name: 'PostgreSQL', category: 'database' },
   { name: 'MySQL', category: 'database' },
+  { name: 'MongoDB', category: 'database' },
+  { name: 'SQLite', category: 'database' },
+  { name: 'Database Design', category: 'database' },
+  // DevOps & Tools
+  { name: 'Git', category: 'devops' },
+  { name: 'GitHub', category: 'devops' },
+  { name: 'GitHub Actions', category: 'devops' },
+  { name: 'Docker', category: 'devops' },
+  { name: 'Vercel', category: 'devops' },
+  { name: 'Netlify', category: 'devops' },
+  { name: 'Linux', category: 'devops' },
+  { name: 'VS Code', category: 'devops' },
+  { name: 'Postman', category: 'devops' },
+  // CMS
   { name: 'WordPress', category: 'cms' },
+  { name: 'Shopify', category: 'cms' },
+  { name: 'Elementor', category: 'cms' },
+  { name: 'WooCommerce', category: 'cms' },
+  // AI & Automation
+  { name: 'OpenAI API', category: 'automation' },
   { name: 'n8n', category: 'automation' },
-  { name: 'APIs & intégration', category: 'automation' },
-  { name: 'Intelligence artificielle (outils & automatisation)', category: 'automation' },
-  { name: 'SEO (technique & contenu)', category: 'marketing' },
+  { name: 'AI Agents', category: 'automation' },
+  { name: 'Prompt Engineering', category: 'automation' },
+  { name: 'Workflow Automation', category: 'automation' },
+  { name: 'API Integration', category: 'automation' },
+  { name: 'Chatbots', category: 'automation' },
+  // Marketing & SEO
+  { name: 'Technical SEO', category: 'marketing' },
+  { name: 'On-Page SEO', category: 'marketing' },
   { name: 'Google Analytics', category: 'marketing' },
-  { name: 'Search Console', category: 'marketing' },
-  { name: 'Emailing & automation', category: 'marketing' },
+  { name: 'Google Search Console', category: 'marketing' },
+  { name: 'Keyword Research', category: 'marketing' },
+  { name: 'Email Automation', category: 'marketing' },
   { name: 'Social Media Management', category: 'marketing' },
-  { name: 'A/B Testing', category: 'marketing' },
+  { name: 'Schema.org', category: 'marketing' },
+  { name: 'Sitemap & Robots.txt', category: 'marketing' },
+  // Design & Content
+  { name: 'Figma', category: 'design' },
   { name: 'Photoshop', category: 'design' },
-  { name: 'Montage vidéo', category: 'design' },
-  { name: 'UML', category: 'devops' },
-  { name: 'Agile / Scrum', category: 'devops' },
-  { name: 'Gestion de projet', category: 'soft' },
-  { name: 'Travail en équipe', category: 'soft' },
-  { name: 'Autonomie', category: 'soft' },
-  { name: 'Créativité', category: 'soft' },
-  { name: 'Français', category: 'languages' },
-  { name: 'English', category: 'languages' },
+  { name: 'Canva', category: 'design' },
+  { name: 'Adobe Illustrator', category: 'design' },
+  { name: 'Video Editing', category: 'design' },
+  // Testing & Quality
+  { name: 'Unit Testing', category: 'testing' },
+  { name: 'Integration Testing', category: 'testing' },
+  { name: 'Debugging', category: 'testing' },
+  { name: 'Performance Optimization', category: 'testing' },
+  { name: 'Cross-Browser Testing', category: 'testing' },
+  // Methods
+  { name: 'Agile / Scrum', category: 'methods' },
+  { name: 'UML', category: 'methods' },
+  { name: 'Clean Architecture', category: 'methods' },
+  { name: 'SOLID Principles', category: 'methods' },
+  { name: 'MVC', category: 'methods' },
+  { name: 'Clean Code', category: 'methods' },
+  // Soft Skills
+  { name: 'Problem Solving', category: 'soft' },
+  { name: 'Teamwork', category: 'soft' },
+  { name: 'Communication', category: 'soft' },
+  { name: 'Project Management', category: 'soft' },
+  { name: 'Leadership', category: 'soft' },
+  { name: 'Time Management', category: 'soft' },
+  { name: 'Adaptability', category: 'soft' },
+  { name: 'Creativity', category: 'soft' },
+  // Languages
+  { name: 'Arabic (Native)', category: 'languages' },
+  { name: 'French (Professional)', category: 'languages' },
+  { name: 'English (Professional)', category: 'languages' },
 ];
 
 /** Category order for the skills grid. Labels come from i18n (`skill.cat.*`). */
@@ -260,11 +328,13 @@ export const skillCategories: Skill['category'][] = [
   'backend',
   'mobile',
   'database',
+  'devops',
   'cms',
   'automation',
   'marketing',
   'design',
-  'devops',
+  'testing',
+  'methods',
   'soft',
   'languages',
 ];

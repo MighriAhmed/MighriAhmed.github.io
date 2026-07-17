@@ -53,7 +53,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden pt-28 pb-12 md:pt-36 md:pb-16">
+    <section className="relative overflow-hidden pt-28 pb-10 sm:pb-12 md:pt-36 md:pb-16">
       <div className="pointer-events-none absolute inset-0">
         <div className="blob left-[10%] top-[20%] h-72 w-72 bg-[var(--color-accent)]/30" />
         <div
@@ -66,19 +66,21 @@ export default function Hero() {
         />
       </div>
 
-      <div className="container-site relative grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8">
-        <motion.div variants={container} initial="hidden" animate="show" className="relative z-10">
+      <div className="container-site relative grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8">
+        <motion.div variants={container} initial="hidden" animate="show" className="relative z-10 min-w-0">
           <motion.div
             variants={item}
-            className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-[var(--color-muted)]"
+            className="mb-6 inline-flex max-w-full flex-wrap items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs text-[var(--color-muted)] sm:px-4 sm:text-sm"
           >
-            <span className="pulse-dot h-2 w-2 rounded-full bg-[var(--color-success)]" />
-            {profile.currentRole} · {profile.currentCompany}
+            <span className="pulse-dot h-2 w-2 shrink-0 rounded-full bg-[var(--color-success)]" />
+            <span className="min-w-0 break-words">
+              {profile.currentRole} · {profile.currentCompany}
+            </span>
           </motion.div>
 
           <motion.h1
             variants={item}
-            className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[4.25rem]"
+            className="font-display text-[2.15rem] font-extrabold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[4.25rem]"
           >
             {t('hero.headline')}{' '}
             <span className="block">
@@ -89,46 +91,51 @@ export default function Hero() {
 
           <motion.p
             variants={item}
-            className="mt-4 text-lg font-medium text-[var(--color-accent-soft)] md:text-xl"
+            className="mt-4 text-base font-medium text-[var(--color-accent-soft)] sm:text-lg md:text-xl"
           >
             {t('hero.role')}
           </motion.p>
 
           <motion.p
             variants={item}
-            className="mt-5 max-w-xl text-base leading-relaxed text-[var(--color-muted)] md:text-lg"
+            className="mt-5 max-w-xl text-sm leading-relaxed text-[var(--color-muted)] sm:text-base md:text-lg"
           >
             {t('hero.intro')}
           </motion.p>
 
-          <motion.div variants={item} className="mt-8 flex flex-wrap gap-3">
-            <a href="/#contact" className="btn-primary" data-magnetic>
+          <motion.div variants={item} className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <a href="/#contact" className="btn-primary w-full sm:w-auto" data-magnetic>
               <Send className="h-4 w-4" />
               {t('hero.contact')}
             </a>
-            <a href="/#projects" className="btn-ghost" data-magnetic>
+            <a href="/#projects" className="btn-ghost w-full sm:w-auto" data-magnetic>
               {t('hero.projects')}
               <ArrowRight className="h-4 w-4" />
             </a>
-            <a href={siteConfig.cvPath} download className="btn-ghost" data-magnetic>
+            <a
+              href={siteConfig.cvPath}
+              download={siteConfig.cvFileName}
+              className="btn-ghost w-full sm:w-auto"
+              data-magnetic
+            >
               <Download className="h-4 w-4" />
               {t('hero.downloadCv')}
             </a>
           </motion.div>
 
-          <motion.div variants={item} className="mt-8 flex flex-wrap items-center gap-4">
+          <motion.div variants={item} className="mt-8 flex flex-wrap items-center gap-3 sm:gap-4">
             <a
               href={siteConfig.socials.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-[var(--color-muted)] transition hover:border-[var(--color-accent)] hover:text-white"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-[var(--color-muted)] transition hover:border-[var(--color-accent)] hover:text-white"
               aria-label="LinkedIn"
             >
               <LinkedInIcon className="h-4 w-4" />
             </a>
             <a
               href={siteConfig.socials.email}
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-[var(--color-muted)] transition hover:border-[var(--color-accent)] hover:text-white"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-[var(--color-muted)] transition hover:border-[var(--color-accent)] hover:text-white"
               aria-label="Email"
             >
               <Mail className="h-4 w-4" />
@@ -137,14 +144,14 @@ export default function Hero() {
               href={siteConfig.socials.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-[var(--color-muted)] transition hover:border-[var(--color-accent)] hover:text-white"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-[var(--color-muted)] transition hover:border-[var(--color-accent)] hover:text-white"
               aria-label="WhatsApp"
             >
               <MessageCircle className="h-4 w-4" />
             </a>
-            <span className="inline-flex items-center gap-2 text-sm text-[var(--color-muted)]">
-              <MapPin className="h-4 w-4 text-[var(--color-accent)]" />
-              {t('location')}
+            <span className="inline-flex min-w-0 items-center gap-2 text-sm text-[var(--color-muted)]">
+              <MapPin className="h-4 w-4 shrink-0 text-[var(--color-accent)]" />
+              <span className="break-words">{t('location')}</span>
             </span>
           </motion.div>
         </motion.div>
@@ -154,7 +161,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.92, filter: 'blur(12px)' }}
           animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
           transition={{ duration: 1, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-          className="relative mx-auto aspect-square w-full max-w-[460px]"
+          className="relative mx-auto aspect-square w-full max-w-[280px] sm:max-w-[360px] md:max-w-[420px] lg:max-w-[460px]"
         >
           <div
             className="orbit-ring absolute inset-6 rounded-full border border-[var(--color-accent)]/25"
@@ -165,7 +172,7 @@ export default function Hero() {
             data-parallax="8"
           />
           <div
-            className="absolute inset-[18%] overflow-hidden rounded-full border border-white/10 bg-gradient-to-b from-[#0f1a3a] to-[#050816] shadow-[var(--shadow-glow)]"
+            className="absolute inset-[12%] overflow-hidden rounded-full border border-white/10 bg-gradient-to-b from-[#0f1a3a] to-[#050816] shadow-[var(--shadow-glow)] sm:inset-[18%]"
             data-parallax="18"
           >
             <img

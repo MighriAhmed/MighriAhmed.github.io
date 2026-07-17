@@ -33,12 +33,12 @@ const categoriesToShow = skillCategories
       />
     </div>
 
-    <div class="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+    <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
       {
         categoriesToShow.map((category) => (
-          <div class="reveal h-full">
+          <div class="reveal h-full min-w-0">
             <GlassCard
-              class="group flex h-full flex-col !p-6 transition duration-300 hover:-translate-y-1 hover:border-[var(--color-border-glow)] hover:shadow-[0_0_40px_rgba(0,122,255,0.12),0_20px_50px_rgba(0,0,0,0.35)] md:!p-7"
+              class="group flex h-full flex-col !p-5 transition duration-300 hover:-translate-y-1 hover:border-[var(--color-border-glow)] hover:shadow-[0_0_40px_rgba(0,122,255,0.12),0_20px_50px_rgba(0,0,0,0.35)] sm:!p-6 md:!p-7"
             >
               <div class="mb-5 flex items-center gap-3 border-b border-white/10 pb-4">
                 <span
@@ -46,7 +46,7 @@ const categoriesToShow = skillCategories
                   aria-hidden="true"
                 />
                 <h3
-                  class="font-display text-lg font-semibold tracking-tight text-white md:text-xl"
+                  class="font-display text-base font-semibold tracking-tight text-white sm:text-lg md:text-xl"
                   data-i18n={category.labelKey}
                 >
                   {translate('fr', category.labelKey)}
@@ -56,7 +56,7 @@ const categoriesToShow = skillCategories
               <ul class="mt-auto flex flex-wrap gap-2">
                 {category.items.map((skill) => (
                   <li>
-                    <span class="inline-flex items-center rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-sm text-[var(--color-muted)] transition duration-300 group-hover:border-[var(--color-accent)]/25 group-hover:bg-[var(--color-accent)]/10 group-hover:text-[var(--color-accent-soft)]">
+                    <span class="inline-flex max-w-full items-center break-words rounded-full border border-white/10 bg-white/[0.04] px-2.5 py-1 text-xs text-[var(--color-muted)] transition duration-300 group-hover:border-[var(--color-accent)]/25 group-hover:bg-[var(--color-accent)]/10 group-hover:text-[var(--color-accent-soft)] sm:px-3 sm:py-1.5 sm:text-sm">
                       {skill.name}
                     </span>
                   </li>

@@ -59,16 +59,16 @@ export default function LanguageSwitcher() {
   }, []);
 
   useEffect(() => {
-    const onPointer = (event: MouseEvent) => {
+    const onPointer = (event: PointerEvent) => {
       if (!rootRef.current?.contains(event.target as Node)) setOpen(false);
     };
     const onKey = (event: KeyboardEvent) => {
       if (event.key === 'Escape') setOpen(false);
     };
-    document.addEventListener('mousedown', onPointer);
+    document.addEventListener('pointerdown', onPointer);
     document.addEventListener('keydown', onKey);
     return () => {
-      document.removeEventListener('mousedown', onPointer);
+      document.removeEventListener('pointerdown', onPointer);
       document.removeEventListener('keydown', onKey);
     };
   }, []);
@@ -100,7 +100,7 @@ export default function LanguageSwitcher() {
         <div
           role="listbox"
           aria-label={t('lang.label', locale)}
-          className="absolute end-0 top-[calc(100%+0.5rem)] z-50 min-w-[11.5rem] overflow-hidden rounded-2xl border border-white/10 bg-[#0a1024]/95 p-1.5 shadow-[0_20px_50px_rgba(0,0,0,0.45)] backdrop-blur-xl"
+          className="absolute end-0 top-[calc(100%+0.5rem)] z-[60] min-w-[11.5rem] overflow-hidden rounded-2xl border border-white/10 bg-[#0a1024]/95 p-1.5 shadow-[0_20px_50px_rgba(0,0,0,0.45)] backdrop-blur-xl"
         >
           {locales.map((code) => {
             const item = localeMeta[code];

@@ -7,15 +7,15 @@ import LanguageSwitcher from '../react/LanguageSwitcher';
 
 <header
   id="site-header"
-  class="fixed inset-x-0 top-0 z-50 transition-all duration-300"
+  class="fixed inset-x-0 top-0 z-50 pt-[env(safe-area-inset-top)] transition-all duration-300"
 >
   <div class="container-site">
     <nav
-      class="mt-4 flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-[#050816]/70 px-4 py-3 backdrop-blur-xl md:gap-4 md:px-6"
+      class="mt-3 flex items-center justify-between gap-2 rounded-2xl border border-white/10 bg-[#050816]/70 px-3 py-3 backdrop-blur-xl sm:gap-3 sm:px-4 md:mt-4 md:gap-4 md:px-6"
       aria-label={translate('fr', 'nav.main')}
       data-i18n-aria="nav.main"
     >
-      <a href="/" class="font-display text-xl font-bold tracking-tight text-white">
+      <a href="/" class="shrink-0 font-display text-xl font-bold tracking-tight text-white">
         {siteConfig.shortName}<span class="text-[var(--color-accent)]">.</span>
       </a>
 
@@ -36,13 +36,13 @@ import LanguageSwitcher from '../react/LanguageSwitcher';
         }
       </ul>
 
-      <div class="flex items-center gap-2 sm:gap-3">
+      <div class="flex shrink-0 items-center gap-2 sm:gap-3">
         <LanguageSwitcher client:load />
 
         <a
           href={siteConfig.cvPath}
-          download
-          class="btn-primary hidden sm:inline-flex !px-4 !py-2.5"
+          download={siteConfig.cvFileName}
+          class="btn-primary hidden lg:inline-flex !px-4 !py-2.5"
           data-magnetic
         >
           <Download className="h-4 w-4" client:load />
@@ -52,15 +52,18 @@ import LanguageSwitcher from '../react/LanguageSwitcher';
         <button
           type="button"
           id="menu-toggle"
-          class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white lg:hidden"
+          class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-white lg:hidden"
           aria-expanded="false"
           aria-controls="mobile-menu"
           aria-label={translate('fr', 'nav.openMenu')}
           data-i18n-aria="nav.openMenu"
         >
           <span class="sr-only" data-i18n="nav.openMenu">{translate('fr', 'nav.openMenu')}</span>
-          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M4 7h16M4 12h16M4 17h16" id="menu-icon-open"></path>
+          <svg id="menu-icon-open" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"></path>
+          </svg>
+          <svg id="menu-icon-close" class="hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18"></path>
           </svg>
         </button>
       </div>
@@ -76,7 +79,7 @@ import LanguageSwitcher from '../react/LanguageSwitcher';
             <li>
               <a
                 href={link.href}
-                class="block rounded-xl px-4 py-3 text-sm text-[var(--color-muted)] transition hover:bg-white/5 hover:text-white"
+                class="flex min-h-11 items-center rounded-xl px-4 py-3 text-sm text-[var(--color-muted)] transition hover:bg-white/5 hover:text-white"
                 data-mobile-link
                 data-i18n={link.labelKey}
               >
@@ -86,7 +89,7 @@ import LanguageSwitcher from '../react/LanguageSwitcher';
           ))
         }
         <li class="pt-2">
-          <a href={siteConfig.cvPath} download class="btn-primary w-full">
+          <a href={siteConfig.cvPath} download={siteConfig.cvFileName} class="btn-primary w-full">
             <span data-i18n="nav.downloadCv">{translate('fr', 'nav.downloadCv')}</span>
           </a>
         </li>
@@ -99,18 +102,54 @@ import LanguageSwitcher from '../react/LanguageSwitcher';
   const toggle = document.getElementById('menu-toggle');
   const menu = document.getElementById('mobile-menu');
   const header = document.getElementById('site-header');
+  const iconOpen = document.getElementById('menu-icon-open');
+  const iconClose = document.getElementById('menu-icon-close');
 
-  toggle?.addEventListener('click', () => {
-    const open = menu?.classList.toggle('hidden') === false;
-    toggle.setAttribute('aria-expanded', String(open));
+  const setMenuOpen = (open: boolean) => {
+    menu?.classList.toggle('hidden', !open);
+    toggle?.setAttribute('aria-expanded', String(open));
+    iconOpen?.classList.toggle('hidden', open);
+    iconClose?.classList.toggle('hidden', !open);
+    document.body.style.overflow = open ? 'hidden' : '';
+    const labelKey = open ? 'nav.closeMenu' : 'nav.openMenu';
+    toggle?.setAttribute('data-i18n-aria', labelKey);
+    const sr = toggle?.querySelector('.sr-only');
+    if (sr) {
+      sr.setAttribute('data-i18n', labelKey);
+      // Keep FR defaults; LanguageSwitcher will refresh if present
+      sr.textContent = open ? 'Fermer le menu' : 'Ouvrir le menu';
+    }
+    toggle?.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+  };
+
+  toggle?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const open = toggle.getAttribute('aria-expanded') !== 'true';
+    setMenuOpen(open);
   });
 
   document.querySelectorAll('[data-mobile-link]').forEach((link) => {
-    link.addEventListener('click', () => {
-      menu?.classList.add('hidden');
-      toggle?.setAttribute('aria-expanded', 'false');
-    });
+    link.addEventListener('click', () => setMenuOpen(false));
   });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') setMenuOpen(false);
+  });
+
+  document.addEventListener('pointerdown', (e) => {
+    if (!menu || menu.classList.contains('hidden')) return;
+    const target = e.target as Node;
+    if (menu.contains(target) || toggle?.contains(target)) return;
+    setMenuOpen(false);
+  });
+
+  window.addEventListener(
+    'resize',
+    () => {
+      if (window.matchMedia('(min-width: 1024px)').matches) setMenuOpen(false);
+    },
+    { passive: true },
+  );
 
   const onScroll = () => {
     if (!header) return;
