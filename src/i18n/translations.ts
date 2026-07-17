@@ -27,7 +27,7 @@ const fr = {
   'hero.intro':
     'Diplômé d’un Master E-Business et d’une Licence en Business Computing à l’ESEN Manouba, je suis spécialisé en développement web full-stack, marketing digital et automatisation. Actuellement Software Engineer chez Dalinovate…',
   'skip': 'Aller au contenu',
-  'site.title': 'Développeur Web & Spécialiste Digital',
+  'site.title': 'Software Engineer & Spécialiste Digital',
   'location': 'Soukra, Ariana, Tunisie',
   'stats.aria': 'Statistiques',
   'stats.experience.label': 'Expérience',
@@ -216,7 +216,7 @@ const en: Record<TranslationKey, string> = {
   'hero.intro':
     'Graduated with a Master’s in E-Business and a Bachelor’s in Business Computing from ESEN Manouba, I specialize in full-stack web development, digital marketing, and automation. Currently Software Engineer at Dalinovate…',
   'skip': 'Skip to content',
-  'site.title': 'Web Developer & Digital Specialist',
+  'site.title': 'Software Engineer & Digital Specialist',
   'location': 'Soukra, Ariana, Tunisia',
   'stats.aria': 'Statistics',
   'stats.experience.label': 'Experience',
@@ -403,7 +403,7 @@ const ar: Record<TranslationKey, string> = {
   'hero.intro':
     'حاصل على ماجستير في الأعمال الإلكترونية وإجازة في معلوماتية الأعمال من المدرسة العليا للاقتصاد الرقمي بمنوبة، ومتخصص في تطوير الويب الكامل والتسويق الرقمي والأتمتة. حالياً مهندس برمجيات لدى Dalinovate…',
   'skip': 'الانتقال إلى المحتوى',
-  'site.title': 'مطوّر ويب وأخصائي رقمي',
+  'site.title': 'مهندس برمجيات وأخصائي رقمي',
   'location': 'سكرة، أريانة، تونس',
   'stats.aria': 'إحصائيات',
   'stats.experience.label': 'الخبرة',
