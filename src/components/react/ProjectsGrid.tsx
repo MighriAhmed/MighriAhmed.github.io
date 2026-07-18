@@ -46,7 +46,7 @@ export default function ProjectsGrid({
                 </div>
                 <div className="p-6">
                   <h3 className="font-display text-xl font-semibold text-white">{project.name}</h3>
-                  <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-[var(--color-muted)]">
+                  <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-[var(--color-muted)]">
                     {t(taglineKey)}
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">

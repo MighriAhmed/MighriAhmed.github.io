@@ -32,11 +32,12 @@ export const seoConfig = {
     country: 'TN',
   },
   defaultTitle:
-    'Ahmed Mighri — Développeur Web & Spécialiste Digital | Software Engineer',
+    'Ahmed Mighri — Ingénieur logiciel & Spécialiste Digital',
   defaultDescription:
-    'Portfolio d’Ahmed Mighri, Software Engineer et développeur full-stack web & mobile. WordPress, React, Flutter, SEO, automatisation n8n et intégration IA. Basé à Soukra, Tunisie.',
+    'Portfolio d’Ahmed Mighri, ingénieur logiciel et développeur full-stack web & mobile. WordPress, React, Flutter, SEO, automatisation n8n et intégration IA. Basé à Soukra, Tunisie.',
   defaultKeywords: [
     'Ahmed Mighri',
+    'Ingénieur logiciel',
     'Software Engineer',
     'Développeur Web',
     'Full-Stack',
@@ -88,12 +89,13 @@ export const pagesSeo: Record<PageSeoId, PageSeoEntry> = {
   },
   about: {
     path: '/about',
-    title: `À propos — ${seoConfig.siteName} | Software Engineer`,
+    title: `À propos — ${seoConfig.siteName} | Ingénieur logiciel`,
     description:
-      'Parcours, mission et valeurs d’Ahmed Mighri, Software Engineer et développeur web & mobile full-stack basé à Soukra, Tunisie.',
+      'Parcours, mission et valeurs d’Ahmed Mighri, ingénieur logiciel et développeur web & mobile full-stack basé à Soukra, Tunisie.',
     keywords: [
       'Ahmed Mighri',
       'À propos',
+      'Ingénieur logiciel',
       'Software Engineer',
       'ESEN Manouba',
       'Full-Stack',

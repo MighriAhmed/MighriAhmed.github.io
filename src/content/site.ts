@@ -19,12 +19,12 @@ export const siteConfig = {
 } as const;
 
 export const profile = {
-  role: 'Développeur Web & Spécialiste Digital',
-  currentRole: 'Software Engineer',
-  /** CV / portfolio: Software Engineer chez Dalinovate */
+  role: 'Ingénieur logiciel & Spécialiste Digital',
+  currentRole: 'Ingénieur logiciel',
+  /** CV / portfolio: ingénieur logiciel chez Dalinovate */
   currentCompany: 'Dalinovate',
   intro:
-    'Diplômé d’un Master E-Business et d’une Licence en Business Computing à l’ESEN Manouba, je suis spécialisé en développement web full-stack, marketing digital et automatisation. Actuellement Software Engineer chez Dalinovate, je pilote et contribue à des projets digitaux complets combinant développement web, SEO, automatisation (n8n), intelligence artificielle et création de contenu (vidéo & design).',
+    'Diplômé d’un Master E-Business et d’une Licence en Business Computing à l’ESEN Manouba, je suis spécialisé en développement web full-stack, marketing digital et automatisation. Actuellement ingénieur logiciel chez Dalinovate, je pilote et contribue à des projets digitaux complets combinant développement web, SEO, automatisation (n8n), intelligence artificielle et création de contenu (vidéo & design).',
   /** LinkedIn About — complementary narrative */
   linkedInAbout:
     'With a strong foundation in IT and digital marketing, I bring a blend of technical expertise and strategic acumen. Experience spans customer-centric strategies, digital campaigns, SEO audits, and web development projects with technologies such as React.js and Spring Boot.',
@@ -91,13 +91,13 @@ export const experience: ExperienceItem[] = [
   {
     id: 'dalinovate',
     company: 'Dalinovate',
-    role: 'Software Engineer',
+    role: 'Ingénieur logiciel',
     start: '2024',
     end: 'Présent',
     current: true,
     source: 'cv',
     summary:
-      'Software Engineer chez Dalinovate. Conception de sites et applications web sur mesure, solutions frontend/backend modernes, SEO, automatisation n8n, IA et applications mobiles Flutter.',
+      'Ingénieur logiciel chez Dalinovate. Conception de sites et applications web sur mesure, solutions frontend/backend modernes, SEO, automatisation n8n, IA et applications mobiles Flutter.',
     responsibilities: [
       'Conception de sites et applications web sur mesure avec WordPress et stacks frontend/backend modernes',
       'Développement d’applications mobiles avec Flutter',
@@ -362,9 +362,10 @@ export const projects: Project[] = [
     id: 'carthage-transfer',
     slug: 'carthage-transfer',
     name: 'Carthage Transfer',
-    tagline: 'Site web, SEO et automatisation pour un service de transport premium',
+    tagline:
+      'Carthage Transfer (Tunisie) — site web, SEO et automatisation pour un service de transferts VIP et navettes aéroport.',
     description:
-      'Développement et gestion du site web, incluant la maintenance et l’évolution des fonctionnalités. Optimisation SEO et des performances afin d’améliorer la visibilité et l’expérience utilisateur. Mise en place d’automatisations des processus avec n8n (réservations, envoi d’emails, gestion client et workflows) pour fluidifier et optimiser les opérations de l’entreprise.',
+      'Carthage Transfer est un service de transport premium en Tunisie (transferts VIP et navettes aéroport). Développement et gestion du site web, maintenance et évolution des fonctionnalités, optimisation SEO et performances, plus automatisations n8n (réservations, emails, gestion client et workflows) pour fluidifier les opérations.',
     role: 'Développement web, SEO, automatisation & IT',
     technologies: ['WordPress', 'SEO', 'n8n', 'Automatisation', 'Email'],
     features: [
@@ -389,9 +390,10 @@ export const projects: Project[] = [
     id: 'amiris-group',
     slug: 'amiris-group',
     name: 'Amiris Group',
-    tagline: 'Site web premium pour une société immobilière allemande',
+    tagline:
+      'Amiris Group (Allemagne) — site vitrine premium pour une société immobilière : biens, courtage, investissement et conseil.',
     description:
-      'Conception et développement du site Amiris Group, une plateforme digitale professionnelle dédiée à l’immobilier : administration de biens, courtage, investissement et conseil. L’expérience met en avant une identité premium, une navigation claire et une présentation soignée des services pour renforcer la crédibilité et la conversion.',
+      'Amiris Group est une société immobilière allemande (administration de biens, courtage, investissement et conseil). Conception et développement de son site vitrine premium : identité soignée, navigation claire et présentation des services pour renforcer crédibilité et conversion. Live : amirisgroup.com.',
     role: 'Développement web & design digital',
     technologies: ['Astro', 'Web Design', 'SEO', 'UI/UX'],
     features: [
@@ -416,9 +418,10 @@ export const projects: Project[] = [
     id: 'fensterio',
     slug: 'fensterio',
     name: 'Fensterio',
-    tagline: 'Site web et marketing digital pour un spécialiste fenêtres & portes',
+    tagline:
+      'Fensterio (Allemagne) — site web et marketing digital pour un spécialiste fenêtres, portes, volets et protection solaire.',
     description:
-      'Contribution au développement web, à l’optimisation SEO et à la création de contenus marketing pour Fensterio, spécialiste allemand des fenêtres, portes, volets et solutions de protection solaire. Le site met en avant le savoir-faire technique, les produits et le parcours client de la planification à la pose.',
+      'Fensterio est un spécialiste allemand des fenêtres, portes, volets et solutions de protection solaire. Contribution au développement web, SEO et contenus marketing : le site met en avant le savoir-faire, les produits et le parcours client de la planification à la pose. Live : fensterio.com.',
     role: 'Marketing digital, SEO & développement web',
     technologies: ['SEO', 'Photoshop', 'Vidéo', 'Social Media', 'Web'],
     features: [
@@ -443,9 +446,10 @@ export const projects: Project[] = [
     id: 'djerba-airport-transfers',
     slug: 'djerba-airport-transfers',
     name: 'Djerba Airport Transfers',
-    tagline: 'Site de réservation pour transferts aéroport à Djerba',
+    tagline:
+      'Djerba Airport Transfers (Tunisie) — plateforme de réservation de transferts privés depuis l’aéroport Djerba-Zarzis.',
     description:
-      'Développement et optimisation du site Djerba Airport Transfers, une plateforme de réservation en ligne pour des transferts fiables depuis l’aéroport de Djerba-Zarzis. Le site met en avant la flotte, le parcours de booking et la confiance client pour convertir les voyageurs en réservations.',
+      'Djerba Airport Transfers propose des transferts privés depuis l’aéroport Djerba-Zarzis (Tunisie). Développement et optimisation d’une plateforme de réservation en ligne : flotte, parcours de booking et preuves de confiance pour convertir les voyageurs. Live : djerba-airport-transfers.com.',
     role: 'Développement web, SEO & expérience de réservation',
     technologies: ['WordPress', 'SEO', 'Booking', 'UX'],
     features: [
@@ -470,9 +474,10 @@ export const projects: Project[] = [
     id: 'airport-transfers-tunisia',
     slug: 'airport-transfers-tunisia',
     name: 'Airport Transfers Tunisia',
-    tagline: 'Plateforme de transferts aéroport vers Hammamet et Enfidha',
+    tagline:
+      'Airport Transfers Tunisia — site de réservation pour transferts privés et navettes entre Tunis, Enfidha et Hammamet.',
     description:
-      'Création et optimisation du site Airport Transfers Tunisia, dédié aux transferts privés et navettes entre Tunis, Enfidha et Hammamet. L’expérience combine réservation en ligne, présentation de flotte et contenus SEO pour capter la demande touristique et business.',
+      'Airport Transfers Tunisia dessert les transferts privés et navettes entre Tunis, Enfidha et Hammamet. Création et optimisation du site : réservation en ligne, présentation de flotte et contenus SEO pour la demande touristique et business. Live : airporttransfertunisia.com.',
     role: 'Développement web, SEO & conversion',
     technologies: ['WordPress', 'SEO', 'Booking', 'Content'],
     features: [

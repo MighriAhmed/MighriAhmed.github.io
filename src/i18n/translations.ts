@@ -23,11 +23,11 @@ const fr = {
   'hero.projects': 'Voir mes projets',
   'hero.downloadCv': 'Download CV',
   'hero.headline': 'Bonjour, je suis',
-  'hero.role': 'Développeur Web & Spécialiste Digital',
+  'hero.role': 'Ingénieur logiciel & Spécialiste Digital',
   'hero.intro':
-    'Diplômé d’un Master E-Business et d’une Licence en Business Computing à l’ESEN Manouba, je suis spécialisé en développement web full-stack, marketing digital et automatisation. Actuellement Software Engineer chez Dalinovate…',
+    'Diplômé d’un Master E-Business et d’une Licence en Business Computing à l’ESEN Manouba, je suis spécialisé en développement web full-stack, marketing digital et automatisation. Actuellement ingénieur logiciel chez Dalinovate…',
   'skip': 'Aller au contenu',
-  'site.title': 'Software Engineer & Spécialiste Digital',
+  'site.title': 'Ingénieur logiciel & Spécialiste Digital',
   'location': 'Soukra, Ariana, Tunisie',
   'stats.aria': 'Statistiques',
   'stats.experience.label': 'Expérience',
@@ -44,24 +44,24 @@ const fr = {
   'about.eyebrow': 'À propos',
   'about.title': 'À propos de moi',
   'about.description':
-    'Software Engineer et développeur full-stack, à l’intersection du web, du mobile, du SEO et de l’automatisation.',
+    'Ingénieur logiciel et développeur full-stack, à l’intersection du web, du mobile, du SEO et de l’automatisation.',
   'about.intro':
-    'Diplômé d’un Master E-Business et d’une Licence en Business Computing à l’ESEN Manouba, je suis spécialisé en développement web full-stack, marketing digital et automatisation. Actuellement Software Engineer chez Dalinovate, je pilote et contribue à des projets digitaux complets combinant développement web, SEO, automatisation (n8n), intelligence artificielle et création de contenu (vidéo & design).',
+    'Diplômé d’un Master E-Business et d’une Licence en Business Computing à l’ESEN Manouba, je suis spécialisé en développement web full-stack, marketing digital et automatisation. Actuellement ingénieur logiciel chez Dalinovate, je pilote et contribue à des projets digitaux complets combinant développement web, SEO, automatisation (n8n), intelligence artificielle et création de contenu (vidéo & design).',
   'about.focus.0': 'Web & Mobile (WordPress, React, Flutter)',
   'about.focus.1': 'SEO technique & contenu',
   'about.focus.2': 'Automatisation n8n & intégrations API',
   'about.focus.3': 'Intelligence artificielle appliquée aux projets digitaux',
   'about.focus.4': 'Gestion de projet & coordination d’équipes',
   'about.cta': 'En savoir plus sur moi',
-  'about.brand.eyebrow': 'Personal brand',
-  'about.brand.role': 'Software Engineer & Full-Stack Developer',
-  'about.brand.expertise': 'Core expertise',
-  'about.brand.stack': 'Tech stack',
-  'about.expertise.0': 'Full-Stack Development',
-  'about.expertise.1': 'Mobile Applications',
-  'about.expertise.2': 'AI Integrations',
-  'about.expertise.3': 'Workflow Automation',
-  'about.expertise.4': 'Technical SEO',
+  'about.brand.eyebrow': 'Marque personnelle',
+  'about.brand.role': 'Ingénieur logiciel & Développeur Full-Stack',
+  'about.brand.expertise': 'Expertise clé',
+  'about.brand.stack': 'Stack technique',
+  'about.expertise.0': 'Développement Full-Stack',
+  'about.expertise.1': 'Applications mobiles',
+  'about.expertise.2': 'Intégrations IA',
+  'about.expertise.3': 'Automatisation de workflows',
+  'about.expertise.4': 'SEO technique',
   'formation.eyebrow': 'Formation',
   'formation.title': 'Éducation',
   'formation.description': 'Parcours académique : Baccalauréat, Licence et Master.',
@@ -80,14 +80,15 @@ const fr = {
   'projects.empty': 'Aucun projet pour le moment.',
   'projects.preview': 'Aperçu du projet',
   'project.carthage-transfer.tagline':
-    'Site web, SEO et automatisation pour un service de transport premium',
-  'project.amiris-group.tagline': 'Site web premium pour une société immobilière allemande',
+    'Carthage Transfer (Tunisie) — site web, SEO et automatisation pour un service de transferts VIP et navettes aéroport.',
+  'project.amiris-group.tagline':
+    'Amiris Group (Allemagne) — site vitrine premium pour une société immobilière : biens, courtage, investissement et conseil.',
   'project.fensterio.tagline':
-    'Site web et marketing digital pour un spécialiste fenêtres & portes',
+    'Fensterio (Allemagne) — site web et marketing digital pour un spécialiste fenêtres, portes, volets et protection solaire.',
   'project.djerba-airport-transfers.tagline':
-    'Site de réservation pour transferts aéroport à Djerba',
+    'Djerba Airport Transfers (Tunisie) — plateforme de réservation de transferts privés depuis l’aéroport Djerba-Zarzis.',
   'project.airport-transfers-tunisia.tagline':
-    'Plateforme de transferts aéroport vers Hammamet et Enfidha',
+    'Airport Transfers Tunisia — site de réservation pour transferts privés et navettes entre Tunis, Enfidha et Hammamet.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Compétences',
   'skills.description':
@@ -150,7 +151,7 @@ const fr = {
   'experience.description': 'Rôles documentés sur le CV et LinkedIn.',
   'experience.viewDetail': 'Voir le détail',
   'experience.present': 'Présent',
-  'job.dalinovate.role': 'Software Engineer',
+  'job.dalinovate.role': 'Ingénieur logiciel',
   'job.carthage-transfer-role.role': 'IT Manager',
   'job.maryouli.role': 'Stagiaire Responsable Marketing Digital',
   'job.trivaw.role': 'Stagiaire Développeur Web Full-Stack',
@@ -212,7 +213,7 @@ const en: Record<TranslationKey, string> = {
   'hero.projects': 'View my projects',
   'hero.downloadCv': 'Download CV',
   'hero.headline': 'Hi, I am',
-  'hero.role': 'Web Developer & Digital Specialist',
+  'hero.role': 'Software Engineer & Digital Specialist',
   'hero.intro':
     'Graduated with a Master’s in E-Business and a Bachelor’s in Business Computing from ESEN Manouba, I specialize in full-stack web development, digital marketing, and automation. Currently Software Engineer at Dalinovate…',
   'skip': 'Skip to content',
@@ -269,14 +270,15 @@ const en: Record<TranslationKey, string> = {
   'projects.empty': 'No projects yet.',
   'projects.preview': 'Project preview',
   'project.carthage-transfer.tagline':
-    'Website, SEO, and automation for a premium transfer service',
-  'project.amiris-group.tagline': 'Premium website for a German real-estate company',
+    'Carthage Transfer (Tunisia) — website, SEO, and automation for a VIP transfer and airport shuttle service.',
+  'project.amiris-group.tagline':
+    'Amiris Group (Germany) — premium showcase site for a real-estate company: property, brokerage, investment, and consulting.',
   'project.fensterio.tagline':
-    'Website and digital marketing for a windows & doors specialist',
+    'Fensterio (Germany) — website and digital marketing for a windows, doors, shutters, and sun-protection specialist.',
   'project.djerba-airport-transfers.tagline':
-    'Booking website for airport transfers in Djerba',
+    'Djerba Airport Transfers (Tunisia) — booking platform for private transfers from Djerba-Zarzis Airport.',
   'project.airport-transfers-tunisia.tagline':
-    'Airport transfer platform for Hammamet and Enfidha',
+    'Airport Transfers Tunisia — booking site for private transfers and shuttles between Tunis, Enfidha, and Hammamet.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Skills',
   'skills.description':
@@ -399,7 +401,7 @@ const ar: Record<TranslationKey, string> = {
   'hero.projects': 'عرض مشاريعي',
   'hero.downloadCv': 'تحميل السيرة',
   'hero.headline': 'مرحباً، أنا',
-  'hero.role': 'مطوّر ويب وأخصائي رقمي',
+  'hero.role': 'مهندس برمجيات وأخصائي رقمي',
   'hero.intro':
     'حاصل على ماجستير في الأعمال الإلكترونية وإجازة في معلوماتية الأعمال من المدرسة العليا للاقتصاد الرقمي بمنوبة، ومتخصص في تطوير الويب الكامل والتسويق الرقمي والأتمتة. حالياً مهندس برمجيات لدى Dalinovate…',
   'skip': 'الانتقال إلى المحتوى',
@@ -456,14 +458,15 @@ const ar: Record<TranslationKey, string> = {
   'projects.empty': 'لا توجد مشاريع حالياً.',
   'projects.preview': 'معاينة المشروع',
   'project.carthage-transfer.tagline':
-    'موقع ويب وSEO وأتمتة لخدمة نقل فاخرة',
-  'project.amiris-group.tagline': 'موقع ويب فاخر لشركة عقارية ألمانية',
+    'Carthage Transfer (تونس) — موقع ويب وSEO وأتمتة لخدمة نقل VIP وحافلات المطار.',
+  'project.amiris-group.tagline':
+    'Amiris Group (ألمانيا) — موقع عرض فاخر لشركة عقارية: إدارة أملاك ووساطة واستثمار واستشارة.',
   'project.fensterio.tagline':
-    'موقع ويب وتسويق رقمي لمتخصص نوافذ وأبواب',
+    'Fensterio (ألمانيا) — موقع ويب وتسويق رقمي لمتخصص نوافذ وأبواب ومصاريع وحماية شمسية.',
   'project.djerba-airport-transfers.tagline':
-    'موقع حجز لنقل المطار في جربة',
+    'Djerba Airport Transfers (تونس) — منصة حجز لنقل خاص من مطار جربة-زارزيس.',
   'project.airport-transfers-tunisia.tagline':
-    'منصة نقل مطار نحو الحمامات والنفيضة',
+    'Airport Transfers Tunisia — موقع حجز لنقل خاص وحافلات بين تونس والنفيضة والحمامات.',
   'skills.eyebrow': 'الخبرة',
   'skills.title': 'المهارات',
   'skills.description':
@@ -585,11 +588,11 @@ const de: Record<TranslationKey, string> = {
   'hero.projects': 'Meine Projekte ansehen',
   'hero.downloadCv': 'CV herunterladen',
   'hero.headline': 'Hallo, ich bin',
-  'hero.role': 'Software Engineer & Digital Specialist',
+  'hero.role': 'Softwareingenieur & Digitalspezialist',
   'hero.intro':
-    'Mit einem Master in E-Business und einem Bachelor in Business Computing der ESEN Manouba spezialisiere ich mich auf Full-Stack-Webentwicklung, digitales Marketing und Automatisierung. Aktuell Software Engineer bei Dalinovate…',
+    'Mit einem Master in E-Business und einem Bachelor in Business Computing der ESEN Manouba spezialisiere ich mich auf Full-Stack-Webentwicklung, digitales Marketing und Automatisierung. Aktuell Softwareingenieur bei Dalinovate…',
   'skip': 'Zum Inhalt springen',
-  'site.title': 'Software Engineer & Digital Specialist',
+  'site.title': 'Softwareingenieur & Digitalspezialist',
   'location': 'Soukra, Ariana, Tunesien',
   'stats.aria': 'Statistiken',
   'stats.experience.label': 'Erfahrung',
@@ -606,17 +609,17 @@ const de: Record<TranslationKey, string> = {
   'about.eyebrow': 'Über mich',
   'about.title': 'Über mich',
   'about.description':
-    'Software Engineer und Full-Stack-Entwickler an der Schnittstelle von Web, Mobile, SEO und Automatisierung.',
+    'Softwareingenieur und Full-Stack-Entwickler an der Schnittstelle von Web, Mobile, SEO und Automatisierung.',
   'about.intro':
-    'Mit einem Master in E-Business und einem Bachelor in Business Computing der ESEN Manouba spezialisiere ich mich auf Full-Stack-Webentwicklung, digitales Marketing und Automatisierung. Als Software Engineer bei Dalinovate leite und begleite ich digitale Projekte, die Webentwicklung, SEO, Automatisierung (n8n), künstliche Intelligenz und Content-Erstellung (Video & Design) verbinden.',
+    'Mit einem Master in E-Business und einem Bachelor in Business Computing der ESEN Manouba spezialisiere ich mich auf Full-Stack-Webentwicklung, digitales Marketing und Automatisierung. Als Softwareingenieur bei Dalinovate leite und begleite ich digitale Projekte, die Webentwicklung, SEO, Automatisierung (n8n), künstliche Intelligenz und Content-Erstellung (Video & Design) verbinden.',
   'about.focus.0': 'Web & Mobile (WordPress, React, Flutter)',
   'about.focus.1': 'Technisches & Content-SEO',
   'about.focus.2': 'n8n-Automatisierung & API-Integrationen',
   'about.focus.3': 'KI für digitale Projekte',
   'about.focus.4': 'Projektmanagement & Teamkoordination',
   'about.cta': 'Mehr über mich erfahren',
-  'about.brand.eyebrow': 'Personal Brand',
-  'about.brand.role': 'Software Engineer & Full-Stack Developer',
+  'about.brand.eyebrow': 'Persönliche Marke',
+  'about.brand.role': 'Softwareingenieur & Full-Stack-Entwickler',
   'about.brand.expertise': 'Kernkompetenzen',
   'about.brand.stack': 'Tech-Stack',
   'about.expertise.0': 'Full-Stack-Entwicklung',
@@ -642,14 +645,15 @@ const de: Record<TranslationKey, string> = {
   'projects.empty': 'Noch keine Projekte.',
   'projects.preview': 'Projektvorschau',
   'project.carthage-transfer.tagline':
-    'Website, SEO und Automatisierung für einen Premium-Transferservice',
-  'project.amiris-group.tagline': 'Premium-Website für ein deutsches Immobilienunternehmen',
+    'Carthage Transfer (Tunesien) — Website, SEO und Automatisierung für VIP-Transfers und Flughafen-Shuttles.',
+  'project.amiris-group.tagline':
+    'Amiris Group (Deutschland) — Premium-Website für eine Immobilienfirma: Verwaltung, Makler, Investment und Beratung.',
   'project.fensterio.tagline':
-    'Website und digitales Marketing für einen Fenster- & Türen-Spezialisten',
+    'Fensterio (Deutschland) — Website und digitales Marketing für einen Spezialisten für Fenster, Türen, Rollläden und Sonnenschutz.',
   'project.djerba-airport-transfers.tagline':
-    'Buchungswebsite für Flughafentransfers auf Djerba',
+    'Djerba Airport Transfers (Tunesien) — Buchungsplattform für Privattransfers vom Flughafen Djerba-Zarzis.',
   'project.airport-transfers-tunisia.tagline':
-    'Flughafentransfer-Plattform für Hammamet und Enfidha',
+    'Airport Transfers Tunisia — Buchungsseite für Privattransfers und Shuttles zwischen Tunis, Enfidha und Hammamet.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Kompetenzen',
   'skills.description':
@@ -712,7 +716,7 @@ const de: Record<TranslationKey, string> = {
   'experience.description': 'Rollen dokumentiert in CV und LinkedIn.',
   'experience.viewDetail': 'Details ansehen',
   'experience.present': 'Heute',
-  'job.dalinovate.role': 'Software Engineer',
+  'job.dalinovate.role': 'Softwareingenieur',
   'job.carthage-transfer-role.role': 'IT Manager',
   'job.maryouli.role': 'Praktikant Digital Marketing Manager',
   'job.trivaw.role': 'Praktikant Full-Stack Webentwickler',
