@@ -23,6 +23,7 @@ const fr = {
   'hero.projects': 'Voir mes projets',
   'hero.downloadCv': 'Download CV',
   'hero.headline': 'Bonjour, je suis',
+  'hero.currentRole': 'Ingénieur logiciel',
   'hero.role': 'Ingénieur logiciel & Spécialiste Digital',
   'hero.intro':
     'Diplômé d’un Master E-Business et d’une Licence en Business Computing à l’ESEN Manouba, je suis spécialisé en développement web full-stack, marketing digital et automatisation. Actuellement ingénieur logiciel chez Dalinovate…',
@@ -213,6 +214,7 @@ const en: Record<TranslationKey, string> = {
   'hero.projects': 'View my projects',
   'hero.downloadCv': 'Download CV',
   'hero.headline': 'Hi, I am',
+  'hero.currentRole': 'Software Engineer',
   'hero.role': 'Software Engineer & Digital Specialist',
   'hero.intro':
     'Graduated with a Master’s in E-Business and a Bachelor’s in Business Computing from ESEN Manouba, I specialize in full-stack web development, digital marketing, and automation. Currently Software Engineer at Dalinovate…',
@@ -401,6 +403,7 @@ const ar: Record<TranslationKey, string> = {
   'hero.projects': 'عرض مشاريعي',
   'hero.downloadCv': 'تحميل السيرة',
   'hero.headline': 'مرحباً، أنا',
+  'hero.currentRole': 'مهندس برمجيات',
   'hero.role': 'مهندس برمجيات وأخصائي رقمي',
   'hero.intro':
     'حاصل على ماجستير في الأعمال الإلكترونية وإجازة في معلوماتية الأعمال من المدرسة العليا للاقتصاد الرقمي بمنوبة، ومتخصص في تطوير الويب الكامل والتسويق الرقمي والأتمتة. حالياً مهندس برمجيات لدى Dalinovate…',
@@ -588,6 +591,7 @@ const de: Record<TranslationKey, string> = {
   'hero.projects': 'Meine Projekte ansehen',
   'hero.downloadCv': 'CV herunterladen',
   'hero.headline': 'Hallo, ich bin',
+  'hero.currentRole': 'Softwareingenieur',
   'hero.role': 'Softwareingenieur & Digitalspezialist',
   'hero.intro':
     'Mit einem Master in E-Business und einem Bachelor in Business Computing der ESEN Manouba spezialisiere ich mich auf Full-Stack-Webentwicklung, digitales Marketing und Automatisierung. Aktuell Softwareingenieur bei Dalinovate…',

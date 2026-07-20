@@ -74,7 +74,7 @@ export default function Hero() {
           >
             <span className="pulse-dot h-2 w-2 shrink-0 rounded-full bg-[var(--color-success)]" />
             <span className="min-w-0 break-words">
-              {profile.currentRole} · {profile.currentCompany}
+              {t('hero.currentRole')} · {profile.currentCompany}
             </span>
           </motion.div>
 
@@ -172,7 +172,7 @@ export default function Hero() {
             data-parallax="8"
           />
           <div
-            className="absolute inset-[12%] overflow-hidden rounded-full border border-white/10 bg-gradient-to-b from-[#0f1a3a] to-[#050816] shadow-[var(--shadow-glow)] sm:inset-[18%]"
+            className="absolute inset-[12%] overflow-hidden rounded-full border border-[var(--color-border)] bg-gradient-to-b from-[var(--hero-photo-from)] to-[var(--hero-photo-to)] shadow-[var(--shadow-glow)] sm:inset-[18%]"
             data-parallax="18"
           >
             <img
@@ -184,7 +184,7 @@ export default function Hero() {
               loading="eager"
               decoding="async"
             />
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#050816]/45 via-transparent to-transparent" />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[var(--overlay-soft)] via-transparent to-transparent" />
           </div>
 
           <span
