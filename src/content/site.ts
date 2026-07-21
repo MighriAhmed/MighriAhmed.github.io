@@ -498,6 +498,62 @@ export const projects: Project[] = [
     image: '/images/projects/airport-transfers-tunisia.png',
     featured: true,
   },
+  {
+    id: 'carthage-dmc',
+    slug: 'carthage-dmc',
+    name: 'Carthage DMC',
+    tagline:
+      'Carthage DMC (Tunisie) — site web pour une DMC : tours, transferts aéroport, MICE et logistique B2B à Tunis.',
+    description:
+      'Carthage DMC est une destination management company basée à Montplaisir, Tunis. Conception et développement du site vitrine : présentation des services (transferts TUN / Enfidha / Monastir, hôtels, circuits, MICE, incentive), régions de Tunisie, témoignages partenaires et formulaire de devis B2B. Live : carthage-dmc.com.',
+    role: 'Développement web, SEO & conversion B2B',
+    technologies: ['Web', 'SEO', 'UI/UX', 'Content'],
+    features: [
+      'Site vitrine orienté agences, tour-opérateurs et entreprises',
+      'Pages services : transferts, hôtels, tours, MICE et incentive',
+      'Présentation des destinations et régions de Tunisie',
+      'Formulaire de devis et parcours contact B2B',
+    ],
+    challenges: [
+      'Clarifier une offre DMC complète pour un public B2B international',
+      'Structurer services, destinations et preuves sociales pour convertir en devis',
+    ],
+    results: [
+      'Présence digitale professionnelle pour Carthage DMC',
+      'Site live : carthage-dmc.com',
+    ],
+    liveUrl: 'https://carthage-dmc.com/',
+    image: '/images/projects/carthage-dmc.png',
+    featured: true,
+  },
+  {
+    id: 'carthage-global-services',
+    slug: 'carthage-global-services',
+    name: 'Carthage Global Services',
+    tagline:
+      'Carthage Global Services (USA / international) — site web MICE & event management pour des entreprises dans 100+ pays.',
+    description:
+      'Carthage Global Services est une société d’event management et de solutions MICE (siège Wyoming, USA) opérant à l’international. Conception et développement du site corporate : services (hébergement, conférences, travel, AV, interprétation), présence mondiale, RSE et formulaire de proposition. Live : carthage-global-services.com.',
+    role: 'Développement web, SEO & site corporate',
+    technologies: ['Web', 'SEO', 'UI/UX', 'Content'],
+    features: [
+      'Site corporate orienté MICE et event management international',
+      'Présentation des services : lodging, conferences, travel, AV, interprétation',
+      'Section présence mondiale (100+ pays) et responsabilité sociale',
+      'Formulaire de contact / demande de proposition',
+    ],
+    challenges: [
+      'Positionner une offre MICE mondiale de façon claire et crédible',
+      'Allier image premium, preuves sociales et conversion en leads B2B',
+    ],
+    results: [
+      'Présence digitale internationale pour Carthage Global Services',
+      'Site live : carthage-global-services.com',
+    ],
+    liveUrl: 'https://carthage-global-services.com/',
+    image: '/images/projects/carthage-global-services.png',
+    featured: true,
+  },
 ];
 
 /**

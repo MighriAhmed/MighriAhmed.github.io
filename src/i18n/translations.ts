@@ -35,7 +35,7 @@ const fr = {
   'stats.experience.unit': 'ans',
   'stats.experience.description': 'Depuis le stage Trivaw (2022)',
   'stats.projects.label': 'Projets clés',
-  'stats.projects.description': 'Carthage, Amiris, Fensterio, Djerba & Hammamet',
+  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & Global',
   'stats.education.label': 'Formation',
   'stats.education.unit': 'diplômes',
   'stats.education.description': 'Bac · Licence · Master',
@@ -90,6 +90,10 @@ const fr = {
     'Djerba Airport Transfers (Tunisie) — plateforme de réservation de transferts privés depuis l’aéroport Djerba-Zarzis.',
   'project.airport-transfers-tunisia.tagline':
     'Airport Transfers Tunisia — site de réservation pour transferts privés et navettes entre Tunis, Enfidha et Hammamet.',
+  'project.carthage-dmc.tagline':
+    'Carthage DMC (Tunisie) — site web pour une DMC : tours, transferts aéroport, MICE et logistique B2B à Tunis.',
+  'project.carthage-global-services.tagline':
+    'Carthage Global Services (USA / international) — site web MICE & event management pour des entreprises dans 100+ pays.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Compétences',
   'skills.description':
@@ -226,7 +230,7 @@ const en: Record<TranslationKey, string> = {
   'stats.experience.unit': 'yrs',
   'stats.experience.description': 'Since the Trivaw internship (2022)',
   'stats.projects.label': 'Key projects',
-  'stats.projects.description': 'Carthage, Amiris, Fensterio, Djerba & Hammamet',
+  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & Global',
   'stats.education.label': 'Education',
   'stats.education.unit': 'degrees',
   'stats.education.description': 'Bac · Bachelor · Master',
@@ -281,6 +285,10 @@ const en: Record<TranslationKey, string> = {
     'Djerba Airport Transfers (Tunisia) — booking platform for private transfers from Djerba-Zarzis Airport.',
   'project.airport-transfers-tunisia.tagline':
     'Airport Transfers Tunisia — booking site for private transfers and shuttles between Tunis, Enfidha, and Hammamet.',
+  'project.carthage-dmc.tagline':
+    'Carthage DMC (Tunisia) — website for a DMC: tours, airport transfers, MICE, and B2B logistics in Tunis.',
+  'project.carthage-global-services.tagline':
+    'Carthage Global Services (USA / international) — MICE & event-management website for corporations across 100+ countries.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Skills',
   'skills.description':
@@ -415,7 +423,7 @@ const ar: Record<TranslationKey, string> = {
   'stats.experience.unit': 'سنوات',
   'stats.experience.description': 'منذ تربص Trivaw (2022)',
   'stats.projects.label': 'مشاريع أساسية',
-  'stats.projects.description': 'Carthage, Amiris, Fensterio, Djerba & Hammamet',
+  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & Global',
   'stats.education.label': 'التكوين',
   'stats.education.unit': 'شهادات',
   'stats.education.description': 'باك · إجازة · ماجستير',
@@ -470,6 +478,10 @@ const ar: Record<TranslationKey, string> = {
     'Djerba Airport Transfers (تونس) — منصة حجز لنقل خاص من مطار جربة-زارزيس.',
   'project.airport-transfers-tunisia.tagline':
     'Airport Transfers Tunisia — موقع حجز لنقل خاص وحافلات بين تونس والنفيضة والحمامات.',
+  'project.carthage-dmc.tagline':
+    'Carthage DMC (تونس) — موقع ويب لشركة DMC: جولات ونقل مطار وMICE ولوجستيات B2B في تونس.',
+  'project.carthage-global-services.tagline':
+    'Carthage Global Services (الولايات المتحدة / دولي) — موقع MICE وإدارة فعاليات للشركات في أكثر من 100 دولة.',
   'skills.eyebrow': 'الخبرة',
   'skills.title': 'المهارات',
   'skills.description':
@@ -603,7 +615,7 @@ const de: Record<TranslationKey, string> = {
   'stats.experience.unit': 'Jahre',
   'stats.experience.description': 'Seit dem Praktikum bei Trivaw (2022)',
   'stats.projects.label': 'Schlüsselprojekte',
-  'stats.projects.description': 'Carthage, Amiris, Fensterio, Djerba & Hammamet',
+  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & Global',
   'stats.education.label': 'Ausbildung',
   'stats.education.unit': 'Abschlüsse',
   'stats.education.description': 'Abitur · Bachelor · Master',
@@ -658,6 +670,10 @@ const de: Record<TranslationKey, string> = {
     'Djerba Airport Transfers (Tunesien) — Buchungsplattform für Privattransfers vom Flughafen Djerba-Zarzis.',
   'project.airport-transfers-tunisia.tagline':
     'Airport Transfers Tunisia — Buchungsseite für Privattransfers und Shuttles zwischen Tunis, Enfidha und Hammamet.',
+  'project.carthage-dmc.tagline':
+    'Carthage DMC (Tunesien) — Website für eine DMC: Touren, Flughafentransfers, MICE und B2B-Logistik in Tunis.',
+  'project.carthage-global-services.tagline':
+    'Carthage Global Services (USA / international) — MICE- & Event-Management-Website für Unternehmen in 100+ Ländern.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Kompetenzen',
   'skills.description':
