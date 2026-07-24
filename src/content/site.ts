@@ -64,7 +64,7 @@ export const profile = {
 /** Stats derived only from documented career data (CV + LinkedIn). Labels come from i18n. */
 export const stats = [
   { id: 'experience', value: 2, suffix: '+', unit: 'ans' },
-  { id: 'projects', value: 5, suffix: '', unit: '' },
+  { id: 'projects', value: 7, suffix: '', unit: '' },
   { id: 'education', value: 3, suffix: '', unit: 'diplômes' },
   { id: 'stack', value: 15, suffix: '+', unit: 'tech' },
 ] as const;
