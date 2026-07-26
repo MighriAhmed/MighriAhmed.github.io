@@ -41,7 +41,7 @@ const { headingAs = 'h2' } = Astro.props;
           <li>
             <a href={siteConfig.phoneHref} class="inline-flex min-h-11 items-center gap-2 py-2 hover:text-white">
               <Phone className="h-4 w-4 shrink-0 text-[var(--color-accent)]" client:load />
-              {siteConfig.phoneDisplay}
+              <span dir="ltr">{siteConfig.phoneDisplay}</span>
             </a>
           </li>
           <li>
