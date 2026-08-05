@@ -35,7 +35,7 @@ const fr = {
   'stats.experience.unit': 'ans',
   'stats.experience.description': 'Depuis l’obtention du diplôme',
   'stats.projects.label': 'Projets clés',
-  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & Global',
+  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & Badsanierung',
   'stats.education.label': 'Formation',
   'stats.education.unit': 'diplômes',
   'stats.education.description': 'Bac · Licence · Master',
@@ -84,6 +84,8 @@ const fr = {
     'Carthage Transfer (Tunisie) — site web, SEO et automatisation pour un service de transferts VIP et navettes aéroport.',
   'project.amiris-group.tagline':
     'Amiris Group (Allemagne) — site vitrine premium pour une société immobilière : biens, courtage, investissement et conseil.',
+  'project.amiris-badsanierung.tagline':
+    'Amiris Badsanierung (Allemagne) — site web premium pour la rénovation de salles de bains : planification, artisanat et conversion.',
   'project.fensterio.tagline':
     'Fensterio (Allemagne) — site web et marketing digital pour un spécialiste fenêtres, portes, volets et protection solaire.',
   'project.djerba-airport-transfers.tagline':
@@ -230,7 +232,7 @@ const en: Record<TranslationKey, string> = {
   'stats.experience.unit': 'yrs',
   'stats.experience.description': 'Since graduation',
   'stats.projects.label': 'Key projects',
-  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & Global',
+  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & Badsanierung',
   'stats.education.label': 'Education',
   'stats.education.unit': 'degrees',
   'stats.education.description': 'Bac · Bachelor · Master',
@@ -279,6 +281,8 @@ const en: Record<TranslationKey, string> = {
     'Carthage Transfer (Tunisia) — website, SEO, and automation for a VIP transfer and airport shuttle service.',
   'project.amiris-group.tagline':
     'Amiris Group (Germany) — premium showcase site for a real-estate company: property, brokerage, investment, and consulting.',
+  'project.amiris-badsanierung.tagline':
+    'Amiris Badsanierung (Germany) — premium website for bathroom renovation: planning, craftsmanship, and conversion.',
   'project.fensterio.tagline':
     'Fensterio (Germany) — website and digital marketing for a windows, doors, shutters, and sun-protection specialist.',
   'project.djerba-airport-transfers.tagline':
@@ -423,7 +427,7 @@ const ar: Record<TranslationKey, string> = {
   'stats.experience.unit': 'سنوات',
   'stats.experience.description': 'منذ التخرج',
   'stats.projects.label': 'مشاريع أساسية',
-  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & Global',
+  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & Badsanierung',
   'stats.education.label': 'التكوين',
   'stats.education.unit': 'شهادات',
   'stats.education.description': 'باك · إجازة · ماجستير',
@@ -472,6 +476,8 @@ const ar: Record<TranslationKey, string> = {
     'Carthage Transfer (تونس) — موقع ويب وSEO وأتمتة لخدمة نقل VIP وحافلات المطار.',
   'project.amiris-group.tagline':
     'Amiris Group (ألمانيا) — موقع عرض فاخر لشركة عقارية: إدارة أملاك ووساطة واستثمار واستشارة.',
+  'project.amiris-badsanierung.tagline':
+    'Amiris Badsanierung (ألمانيا) — موقع ويب فاخر لتجديد الحمامات: تخطيط وحرفية وتحويل.',
   'project.fensterio.tagline':
     'Fensterio (ألمانيا) — موقع ويب وتسويق رقمي لمتخصص نوافذ وأبواب ومصاريع وحماية شمسية.',
   'project.djerba-airport-transfers.tagline':
@@ -615,7 +621,7 @@ const de: Record<TranslationKey, string> = {
   'stats.experience.unit': 'Jahre',
   'stats.experience.description': 'Seit dem Abschluss',
   'stats.projects.label': 'Schlüsselprojekte',
-  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & Global',
+  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & Badsanierung',
   'stats.education.label': 'Ausbildung',
   'stats.education.unit': 'Abschlüsse',
   'stats.education.description': 'Abitur · Bachelor · Master',
@@ -664,6 +670,8 @@ const de: Record<TranslationKey, string> = {
     'Carthage Transfer (Tunesien) — Website, SEO und Automatisierung für VIP-Transfers und Flughafen-Shuttles.',
   'project.amiris-group.tagline':
     'Amiris Group (Deutschland) — Premium-Website für eine Immobilienfirma: Verwaltung, Makler, Investment und Beratung.',
+  'project.amiris-badsanierung.tagline':
+    'Amiris Badsanierung (Deutschland) — Premium-Website für Badrenovierung: Planung, Handwerk und Conversion.',
   'project.fensterio.tagline':
     'Fensterio (Deutschland) — Website und digitales Marketing für einen Spezialisten für Fenster, Türen, Rollläden und Sonnenschutz.',
   'project.djerba-airport-transfers.tagline':

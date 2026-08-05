@@ -64,7 +64,7 @@ export const profile = {
 /** Stats derived only from documented career data (CV + LinkedIn). Labels come from i18n. */
 export const stats = [
   { id: 'experience', value: 2, suffix: '+', unit: 'ans' },
-  { id: 'projects', value: 7, suffix: '', unit: '' },
+  { id: 'projects', value: 8, suffix: '', unit: '' },
   { id: 'education', value: 3, suffix: '', unit: 'diplômes' },
   { id: 'stack', value: 15, suffix: '+', unit: 'tech' },
 ] as const;
@@ -412,6 +412,34 @@ export const projects: Project[] = [
     ],
     liveUrl: 'https://amirisgroup.com/',
     image: '/images/projects/amiris-group.png',
+    featured: true,
+  },
+  {
+    id: 'amiris-badsanierung',
+    slug: 'amiris-badsanierung',
+    name: 'Amiris Badsanierung',
+    tagline:
+      'Amiris Badsanierung (Allemagne) — site web premium pour la rénovation de salles de bains : planification, artisanat et conversion.',
+    description:
+      'Amiris Badsanierung est une entreprise allemande spécialisée dans la rénovation premium de salles de bains (sanitaires, douches walk-in, carrelage, accessibilité). Conception et développement du site vitrine : présentation des prestations, projets avant/après, parcours client en 5 étapes, avis et formulaire de conseil gratuit. Live : amiris-badsanierung.de.',
+    role: 'Développement web, SEO & conversion',
+    technologies: ['Web', 'SEO', 'UI/UX', 'Content'],
+    features: [
+      'Site vitrine premium orienté rénovation de salles de bains',
+      'Pages prestations : sanitaires, walk-in, carrelage, accessibilité',
+      'Galerie avant/après et parcours client structuré',
+      'Formulaire de conseil gratuit et preuves sociales',
+    ],
+    challenges: [
+      'Traduire une offre artisanale premium en expérience web claire et rassurante',
+      'Convertir les visiteurs vers une demande de conseil sans friction',
+    ],
+    results: [
+      'Présence digitale professionnelle pour Amiris Badsanierung',
+      'Site live : amiris-badsanierung.de',
+    ],
+    liveUrl: 'https://amiris-badsanierung.de/',
+    image: '/images/projects/amiris-badsanierung.png',
     featured: true,
   },
   {
