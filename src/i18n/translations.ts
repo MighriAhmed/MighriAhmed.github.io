@@ -35,7 +35,7 @@ const fr = {
   'stats.experience.unit': 'ans',
   'stats.experience.description': 'Depuis l’obtention du diplôme',
   'stats.projects.label': 'Projets clés',
-  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & Badsanierung',
+  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & CuraKissen',
   'stats.education.label': 'Formation',
   'stats.education.unit': 'diplômes',
   'stats.education.description': 'Bac · Licence · Master',
@@ -96,6 +96,8 @@ const fr = {
     'Carthage DMC (Tunisie) — site web pour une DMC : tours, transferts aéroport, MICE et logistique B2B à Tunis.',
   'project.carthage-global-services.tagline':
     'Carthage Global Services (USA / international) — site web MICE & event management pour des entreprises dans 100+ pays.',
+  'project.curakissen.tagline':
+    'CuraKissen (Allemagne) — boutique e-commerce pour des oreillers ergonomiques Memory Foam : catalogue, SEO et conversion.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Compétences',
   'skills.description':
@@ -232,7 +234,7 @@ const en: Record<TranslationKey, string> = {
   'stats.experience.unit': 'yrs',
   'stats.experience.description': 'Since graduation',
   'stats.projects.label': 'Key projects',
-  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & Badsanierung',
+  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & CuraKissen',
   'stats.education.label': 'Education',
   'stats.education.unit': 'degrees',
   'stats.education.description': 'Bac · Bachelor · Master',
@@ -293,6 +295,8 @@ const en: Record<TranslationKey, string> = {
     'Carthage DMC (Tunisia) — website for a DMC: tours, airport transfers, MICE, and B2B logistics in Tunis.',
   'project.carthage-global-services.tagline':
     'Carthage Global Services (USA / international) — MICE & event-management website for corporations across 100+ countries.',
+  'project.curakissen.tagline':
+    'CuraKissen (Germany) — e-commerce store for ergonomic Memory Foam pillows: catalog, SEO, and conversion.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Skills',
   'skills.description':
@@ -427,7 +431,7 @@ const ar: Record<TranslationKey, string> = {
   'stats.experience.unit': 'سنوات',
   'stats.experience.description': 'منذ التخرج',
   'stats.projects.label': 'مشاريع أساسية',
-  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & Badsanierung',
+  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & CuraKissen',
   'stats.education.label': 'التكوين',
   'stats.education.unit': 'شهادات',
   'stats.education.description': 'باك · إجازة · ماجستير',
@@ -488,6 +492,8 @@ const ar: Record<TranslationKey, string> = {
     'Carthage DMC (تونس) — موقع ويب لشركة DMC: جولات ونقل مطار وMICE ولوجستيات B2B في تونس.',
   'project.carthage-global-services.tagline':
     'Carthage Global Services (الولايات المتحدة / دولي) — موقع MICE وإدارة فعاليات للشركات في أكثر من 100 دولة.',
+  'project.curakissen.tagline':
+    'CuraKissen (ألمانيا) — متجر إلكتروني لوسائد Memory Foam المريحة: كتالوج وSEO وتحويل.',
   'skills.eyebrow': 'الخبرة',
   'skills.title': 'المهارات',
   'skills.description':
@@ -621,7 +627,7 @@ const de: Record<TranslationKey, string> = {
   'stats.experience.unit': 'Jahre',
   'stats.experience.description': 'Seit dem Abschluss',
   'stats.projects.label': 'Schlüsselprojekte',
-  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & Badsanierung',
+  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & CuraKissen',
   'stats.education.label': 'Ausbildung',
   'stats.education.unit': 'Abschlüsse',
   'stats.education.description': 'Abitur · Bachelor · Master',
@@ -682,6 +688,8 @@ const de: Record<TranslationKey, string> = {
     'Carthage DMC (Tunesien) — Website für eine DMC: Touren, Flughafentransfers, MICE und B2B-Logistik in Tunis.',
   'project.carthage-global-services.tagline':
     'Carthage Global Services (USA / international) — MICE- & Event-Management-Website für Unternehmen in 100+ Ländern.',
+  'project.curakissen.tagline':
+    'CuraKissen (Deutschland) — E-Commerce-Shop für ergonomische Memory-Foam-Kissen: Katalog, SEO und Conversion.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Kompetenzen',
   'skills.description':

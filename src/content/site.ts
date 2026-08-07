@@ -64,7 +64,7 @@ export const profile = {
 /** Stats derived only from documented career data (CV + LinkedIn). Labels come from i18n. */
 export const stats = [
   { id: 'experience', value: 2, suffix: '+', unit: 'ans' },
-  { id: 'projects', value: 8, suffix: '', unit: '' },
+  { id: 'projects', value: 9, suffix: '', unit: '' },
   { id: 'education', value: 3, suffix: '', unit: 'diplômes' },
   { id: 'stack', value: 15, suffix: '+', unit: 'tech' },
 ] as const;
@@ -580,6 +580,34 @@ export const projects: Project[] = [
     ],
     liveUrl: 'https://carthage-global-services.com/',
     image: '/images/projects/carthage-global-services.png',
+    featured: true,
+  },
+  {
+    id: 'curakissen',
+    slug: 'curakissen',
+    name: 'CuraKissen',
+    tagline:
+      'CuraKissen (Allemagne) — boutique e-commerce pour des oreillers ergonomiques Memory Foam : catalogue, SEO et conversion.',
+    description:
+      'CuraKissen® est une marque allemande d’oreillers ergonomiques et orthopédiques (Memory Foam, Öko-Tex). Conception et développement du site e-commerce : catalogue produits, avantages et preuves scientifiques, avis clients, FAQ et parcours d’achat (panier, livraison, paiement). Live : curakissen.de.',
+    role: 'Développement web, SEO & e-commerce',
+    technologies: ['Web', 'E-commerce', 'SEO', 'UI/UX'],
+    features: [
+      'Boutique e-commerce orientée produits ergonomiques',
+      'Fiches produits, comparaison et preuves sociales',
+      'Parcours panier / checkout et réassurance (essai 30 nuits)',
+      'SEO et contenus pour l’acquisition organique en Allemagne',
+    ],
+    challenges: [
+      'Convertir une offre produit santé/confort en expérience d’achat claire',
+      'Structurer catalogue, preuves et FAQ pour rassurer et vendre',
+    ],
+    results: [
+      'Présence e-commerce professionnelle pour CuraKissen',
+      'Site live : curakissen.de',
+    ],
+    liveUrl: 'https://curakissen.de/',
+    image: '/images/projects/curakissen.png',
     featured: true,
   },
 ];
