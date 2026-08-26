@@ -35,7 +35,7 @@ const fr = {
   'stats.experience.unit': 'ans',
   'stats.experience.description': 'Depuis l’obtention du diplôme',
   'stats.projects.label': 'Projets clés',
-  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & CuraKissen',
+  'stats.projects.description': 'Carthage, Amiris, tunisiafeed & CuraKissen',
   'stats.education.label': 'Formation',
   'stats.education.unit': 'diplômes',
   'stats.education.description': 'Bac · Licence · Master',
@@ -98,6 +98,10 @@ const fr = {
     'Carthage Global Services (USA / international) — site web MICE & event management pour des entreprises dans 100+ pays.',
   'project.curakissen.tagline':
     'CuraKissen (Allemagne) — boutique e-commerce pour des oreillers ergonomiques Memory Foam : catalogue, SEO et conversion.',
+  'project.tunisiafeed.tagline':
+    'tunisiafeed.com (Tunisie) — magazine digital multilingue : tech, design, culture, business et destinations.',
+  'project.amiris-leckortung.tagline':
+    'Amiris Leckortung (Allemagne) — site web pour la détection de fuites et dégâts des eaux : services, preuves et conversion.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Compétences',
   'skills.description':
@@ -234,7 +238,7 @@ const en: Record<TranslationKey, string> = {
   'stats.experience.unit': 'yrs',
   'stats.experience.description': 'Since graduation',
   'stats.projects.label': 'Key projects',
-  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & CuraKissen',
+  'stats.projects.description': 'Carthage, Amiris, tunisiafeed & CuraKissen',
   'stats.education.label': 'Education',
   'stats.education.unit': 'degrees',
   'stats.education.description': 'Bac · Bachelor · Master',
@@ -297,6 +301,10 @@ const en: Record<TranslationKey, string> = {
     'Carthage Global Services (USA / international) — MICE & event-management website for corporations across 100+ countries.',
   'project.curakissen.tagline':
     'CuraKissen (Germany) — e-commerce store for ergonomic Memory Foam pillows: catalog, SEO, and conversion.',
+  'project.tunisiafeed.tagline':
+    'tunisiafeed.com (Tunisia) — multilingual digital magazine: tech, design, culture, business, and destinations.',
+  'project.amiris-leckortung.tagline':
+    'Amiris Leckortung (Germany) — website for leak detection and water-damage locating: services, proof, and conversion.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Skills',
   'skills.description':
@@ -431,7 +439,7 @@ const ar: Record<TranslationKey, string> = {
   'stats.experience.unit': 'سنوات',
   'stats.experience.description': 'منذ التخرج',
   'stats.projects.label': 'مشاريع أساسية',
-  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & CuraKissen',
+  'stats.projects.description': 'Carthage, Amiris, tunisiafeed & CuraKissen',
   'stats.education.label': 'التكوين',
   'stats.education.unit': 'شهادات',
   'stats.education.description': 'باك · إجازة · ماجستير',
@@ -494,6 +502,10 @@ const ar: Record<TranslationKey, string> = {
     'Carthage Global Services (الولايات المتحدة / دولي) — موقع MICE وإدارة فعاليات للشركات في أكثر من 100 دولة.',
   'project.curakissen.tagline':
     'CuraKissen (ألمانيا) — متجر إلكتروني لوسائد Memory Foam المريحة: كتالوج وSEO وتحويل.',
+  'project.tunisiafeed.tagline':
+    'tunisiafeed.com (تونس) — مجلة رقمية متعددة اللغات: تقنية وتصميم وثقافة وأعمال ووجهات.',
+  'project.amiris-leckortung.tagline':
+    'Amiris Leckortung (ألمانيا) — موقع ويب لكشف التسربات وأضرار المياه: خدمات وإثباتات وتحويل.',
   'skills.eyebrow': 'الخبرة',
   'skills.title': 'المهارات',
   'skills.description':
@@ -627,7 +639,7 @@ const de: Record<TranslationKey, string> = {
   'stats.experience.unit': 'Jahre',
   'stats.experience.description': 'Seit dem Abschluss',
   'stats.projects.label': 'Schlüsselprojekte',
-  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC & CuraKissen',
+  'stats.projects.description': 'Carthage, Amiris, tunisiafeed & CuraKissen',
   'stats.education.label': 'Ausbildung',
   'stats.education.unit': 'Abschlüsse',
   'stats.education.description': 'Abitur · Bachelor · Master',
@@ -690,6 +702,10 @@ const de: Record<TranslationKey, string> = {
     'Carthage Global Services (USA / international) — MICE- & Event-Management-Website für Unternehmen in 100+ Ländern.',
   'project.curakissen.tagline':
     'CuraKissen (Deutschland) — E-Commerce-Shop für ergonomische Memory-Foam-Kissen: Katalog, SEO und Conversion.',
+  'project.tunisiafeed.tagline':
+    'tunisiafeed.com (Tunesien) — mehrsprachiges Digitalmagazin: Tech, Design, Kultur, Business und Destinationen.',
+  'project.amiris-leckortung.tagline':
+    'Amiris Leckortung (Deutschland) — Website für Leckortung und Wasserschadenortung: Leistungen, Nachweise und Conversion.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Kompetenzen',
   'skills.description':

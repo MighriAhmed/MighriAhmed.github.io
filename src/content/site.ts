@@ -64,7 +64,7 @@ export const profile = {
 /** Stats derived only from documented career data (CV + LinkedIn). Labels come from i18n. */
 export const stats = [
   { id: 'experience', value: 2, suffix: '+', unit: 'ans' },
-  { id: 'projects', value: 9, suffix: '', unit: '' },
+  { id: 'projects', value: 11, suffix: '', unit: '' },
   { id: 'education', value: 3, suffix: '', unit: 'diplômes' },
   { id: 'stack', value: 15, suffix: '+', unit: 'tech' },
 ] as const;
@@ -608,6 +608,62 @@ export const projects: Project[] = [
     ],
     liveUrl: 'https://curakissen.de/',
     image: '/images/projects/curakissen.png',
+    featured: true,
+  },
+  {
+    id: 'tunisiafeed',
+    slug: 'tunisiafeed',
+    name: 'tunisiafeed.com',
+    tagline:
+      'tunisiafeed.com (Tunisie) — magazine digital multilingue : tech, design, culture, business et destinations.',
+    description:
+      'tunisiafeed.com est un magazine digital imaginé depuis la Tunisie. Conception et développement du site éditorial : sections Discover, Magazine, Blog, Tunisia / 2060, Interviews, FAQ, newsletter Future Digest et sélecteur de langue (EN, FR, DE, AR, IT, ES). Live : tunisiafeed.com.',
+    role: 'Développement web, SEO & éditorial digital',
+    technologies: ['Web', 'SEO', 'UI/UX', 'i18n'],
+    features: [
+      'Magazine digital multilingue avec navigation éditoriale',
+      'Sections destinations, interviews et articles',
+      'Newsletter Future Digest et FAQ',
+      'Expérience visuelle premium orientée storytelling',
+    ],
+    challenges: [
+      'Structurer un contenu éditorial riche sans perdre la clarté de navigation',
+      'Allier identité visuelle forte et performance multilingue',
+    ],
+    results: [
+      'Présence éditoriale digitale pour tunisiafeed.com',
+      'Site live : tunisiafeed.com',
+    ],
+    liveUrl: 'https://tunisiafeed.com/',
+    image: '/images/projects/tunisiafeed.png',
+    featured: true,
+  },
+  {
+    id: 'amiris-leckortung',
+    slug: 'amiris-leckortung',
+    name: 'Amiris Leckortung',
+    tagline:
+      'Amiris Leckortung (Allemagne) — site web pour la détection de fuites et dégâts des eaux : services, preuves et conversion.',
+    description:
+      'Amiris Leckortung est une entreprise allemande spécialisée dans la localisation professionnelle de fuites d’eau, ruptures de canalisations et humidité (thermographie, acoustique, mesure). Conception et développement du site vitrine : prestations, références, parcours en 5 étapes, avis et formulaire de demande. Live : amiris-leckortung.de.',
+    role: 'Développement web, SEO & conversion',
+    technologies: ['Web', 'SEO', 'UI/UX', 'Content'],
+    features: [
+      'Site vitrine orienté détection de fuites et dégâts des eaux',
+      'Pages prestations : Leckortung, Rohrbruch, Thermografie, Feuchte',
+      'Références projets, parcours client et FAQ',
+      'Formulaire de contact et preuves sociales',
+    ],
+    challenges: [
+      'Expliquer une offre technique (mesures, procédures) de façon claire et rassurante',
+      'Convertir les urgences / demandes vers un devis sans friction',
+    ],
+    results: [
+      'Présence digitale professionnelle pour Amiris Leckortung',
+      'Site live : amiris-leckortung.de',
+    ],
+    liveUrl: 'https://amiris-leckortung.de/',
+    image: '/images/projects/amiris-leckortung.png',
     featured: true,
   },
 ];
