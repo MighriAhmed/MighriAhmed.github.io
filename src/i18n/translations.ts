@@ -35,7 +35,7 @@ const fr = {
   'stats.experience.unit': 'ans',
   'stats.experience.description': 'Depuis l’obtention du diplôme',
   'stats.projects.label': 'Projets clés',
-  'stats.projects.description': 'Carthage, Amiris, tunisiafeed & CuraKissen',
+  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC, CuraKissen & Feed',
   'stats.education.label': 'Formation',
   'stats.education.unit': 'diplômes',
   'stats.education.description': 'Bac · Licence · Master',
@@ -99,9 +99,9 @@ const fr = {
   'project.curakissen.tagline':
     'CuraKissen (Allemagne) — boutique e-commerce pour des oreillers ergonomiques Memory Foam : catalogue, SEO et conversion.',
   'project.tunisiafeed.tagline':
-    'tunisiafeed.com (Tunisie) — magazine digital multilingue : tech, design, culture, business et destinations.',
+    'tunisiafeed.com (Tunisie) — magazine digital multilingue : tech, design, culture, business et destinations tunisiennes.',
   'project.amiris-leckortung.tagline':
-    'Amiris Leckortung (Allemagne) — site web pour la détection de fuites et dégâts des eaux : services, preuves et conversion.',
+    'Amiris Leckortung (Allemagne) — site web pour la détection de fuites d’eau : services, mesures et conversion B2C.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Compétences',
   'skills.description':
@@ -238,7 +238,7 @@ const en: Record<TranslationKey, string> = {
   'stats.experience.unit': 'yrs',
   'stats.experience.description': 'Since graduation',
   'stats.projects.label': 'Key projects',
-  'stats.projects.description': 'Carthage, Amiris, tunisiafeed & CuraKissen',
+  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC, CuraKissen & Feed',
   'stats.education.label': 'Education',
   'stats.education.unit': 'degrees',
   'stats.education.description': 'Bac · Bachelor · Master',
@@ -302,9 +302,9 @@ const en: Record<TranslationKey, string> = {
   'project.curakissen.tagline':
     'CuraKissen (Germany) — e-commerce store for ergonomic Memory Foam pillows: catalog, SEO, and conversion.',
   'project.tunisiafeed.tagline':
-    'tunisiafeed.com (Tunisia) — multilingual digital magazine: tech, design, culture, business, and destinations.',
+    'tunisiafeed.com (Tunisia) — multilingual digital magazine: tech, design, culture, business, and Tunisian destinations.',
   'project.amiris-leckortung.tagline':
-    'Amiris Leckortung (Germany) — website for leak detection and water-damage locating: services, proof, and conversion.',
+    'Amiris Leckortung (Germany) — website for water leak detection: services, diagnostics, and B2C conversion.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Skills',
   'skills.description':
@@ -439,7 +439,7 @@ const ar: Record<TranslationKey, string> = {
   'stats.experience.unit': 'سنوات',
   'stats.experience.description': 'منذ التخرج',
   'stats.projects.label': 'مشاريع أساسية',
-  'stats.projects.description': 'Carthage, Amiris, tunisiafeed & CuraKissen',
+  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC, CuraKissen & Feed',
   'stats.education.label': 'التكوين',
   'stats.education.unit': 'شهادات',
   'stats.education.description': 'باك · إجازة · ماجستير',
@@ -503,9 +503,9 @@ const ar: Record<TranslationKey, string> = {
   'project.curakissen.tagline':
     'CuraKissen (ألمانيا) — متجر إلكتروني لوسائد Memory Foam المريحة: كتالوج وSEO وتحويل.',
   'project.tunisiafeed.tagline':
-    'tunisiafeed.com (تونس) — مجلة رقمية متعددة اللغات: تقنية وتصميم وثقافة وأعمال ووجهات.',
+    'tunisiafeed.com (تونس) — مجلة رقمية متعددة اللغات: تقنية وتصميم وثقافة وأعمال ووجهات تونسية.',
   'project.amiris-leckortung.tagline':
-    'Amiris Leckortung (ألمانيا) — موقع ويب لكشف التسربات وأضرار المياه: خدمات وإثباتات وتحويل.',
+    'Amiris Leckortung (ألمانيا) — موقع كشف تسربات المياه: خدمات وقياسات وتحويل B2C.',
   'skills.eyebrow': 'الخبرة',
   'skills.title': 'المهارات',
   'skills.description':
@@ -639,7 +639,7 @@ const de: Record<TranslationKey, string> = {
   'stats.experience.unit': 'Jahre',
   'stats.experience.description': 'Seit dem Abschluss',
   'stats.projects.label': 'Schlüsselprojekte',
-  'stats.projects.description': 'Carthage, Amiris, tunisiafeed & CuraKissen',
+  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC, CuraKissen & Feed',
   'stats.education.label': 'Ausbildung',
   'stats.education.unit': 'Abschlüsse',
   'stats.education.description': 'Abitur · Bachelor · Master',
@@ -703,9 +703,9 @@ const de: Record<TranslationKey, string> = {
   'project.curakissen.tagline':
     'CuraKissen (Deutschland) — E-Commerce-Shop für ergonomische Memory-Foam-Kissen: Katalog, SEO und Conversion.',
   'project.tunisiafeed.tagline':
-    'tunisiafeed.com (Tunesien) — mehrsprachiges Digitalmagazin: Tech, Design, Kultur, Business und Destinationen.',
+    'tunisiafeed.com (Tunesien) — mehrsprachiges Digital-Magazin: Tech, Design, Kultur, Business und Reiseziele.',
   'project.amiris-leckortung.tagline':
-    'Amiris Leckortung (Deutschland) — Website für Leckortung und Wasserschadenortung: Leistungen, Nachweise und Conversion.',
+    'Amiris Leckortung (Deutschland) — Website für Leckortung: Leistungen, Messtechnik und B2C-Conversion.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Kompetenzen',
   'skills.description':

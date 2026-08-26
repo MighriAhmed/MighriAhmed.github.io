@@ -615,23 +615,23 @@ export const projects: Project[] = [
     slug: 'tunisiafeed',
     name: 'tunisiafeed.com',
     tagline:
-      'tunisiafeed.com (Tunisie) — magazine digital multilingue : tech, design, culture, business et destinations.',
+      'tunisiafeed.com (Tunisie) — magazine digital multilingue : tech, design, culture, business et destinations tunisiennes.',
     description:
-      'tunisiafeed.com est un magazine digital imaginé depuis la Tunisie. Conception et développement du site éditorial : sections Discover, Magazine, Blog, Tunisia / 2060, Interviews, FAQ, newsletter Future Digest et sélecteur de langue (EN, FR, DE, AR, IT, ES). Live : tunisiafeed.com.',
+      'tunisiafeed.com est un magazine digital imaginé depuis la Tunisie. Conception et développement du site éditorial : articles, interviews, section Tunisia / 2060, destinations, FAQ, newsletter Future Digest et interface multilingue (FR, EN, DE, AR, IT, ES). Live : tunisiafeed.com.',
     role: 'Développement web, SEO & éditorial digital',
-    technologies: ['Web', 'SEO', 'UI/UX', 'i18n'],
+    technologies: ['Web', 'SEO', 'UI/UX', 'Content', 'i18n'],
     features: [
-      'Magazine digital multilingue avec navigation éditoriale',
-      'Sections destinations, interviews et articles',
-      'Newsletter Future Digest et FAQ',
-      'Expérience visuelle premium orientée storytelling',
+      'Magazine digital avec rubriques Discover, Blog, Interviews et Tunisia',
+      'Contenus tech, design, culture, business et travel',
+      'Section destinations et interviews de profils tunisiens',
+      'Newsletter Future Digest et navigation multilingue',
     ],
     challenges: [
-      'Structurer un contenu éditorial riche sans perdre la clarté de navigation',
-      'Allier identité visuelle forte et performance multilingue',
+      'Structurer un magazine riche en contenus sans surcharge de navigation',
+      'Allier identité éditoriale premium et SEO multilingue',
     ],
     results: [
-      'Présence éditoriale digitale pour tunisiafeed.com',
+      'Présence digitale éditoriale pour tunisiafeed.com',
       'Site live : tunisiafeed.com',
     ],
     liveUrl: 'https://tunisiafeed.com/',
@@ -643,20 +643,20 @@ export const projects: Project[] = [
     slug: 'amiris-leckortung',
     name: 'Amiris Leckortung',
     tagline:
-      'Amiris Leckortung (Allemagne) — site web pour la détection de fuites et dégâts des eaux : services, preuves et conversion.',
+      'Amiris Leckortung (Allemagne) — site web pour la détection de fuites d’eau : services, mesures et conversion B2C.',
     description:
-      'Amiris Leckortung est une entreprise allemande spécialisée dans la localisation professionnelle de fuites d’eau, ruptures de canalisations et humidité (thermographie, acoustique, mesure). Conception et développement du site vitrine : prestations, références, parcours en 5 étapes, avis et formulaire de demande. Live : amiris-leckortung.de.',
+      'Amiris Leckortung est une entreprise allemande spécialisée dans la détection de fuites et l’ortung de dégâts des eaux (acoustique, thermographie, humidité). Conception et développement du site vitrine : services, méthodes, projets référencés, parcours client et formulaire de contact. Live : amiris-leckortung.de.',
     role: 'Développement web, SEO & conversion',
     technologies: ['Web', 'SEO', 'UI/UX', 'Content'],
     features: [
-      'Site vitrine orienté détection de fuites et dégâts des eaux',
-      'Pages prestations : Leckortung, Rohrbruch, Thermografie, Feuchte',
-      'Références projets, parcours client et FAQ',
-      'Formulaire de contact et preuves sociales',
+      'Site vitrine orienté Leckortung et Wasserschadenortung',
+      'Présentation des méthodes : acoustique, humidité, thermographie, tracer-gas',
+      'Galerie projets et témoignages clients',
+      'Parcours contact et FAQ pour demandes urgentes',
     ],
     challenges: [
-      'Expliquer une offre technique (mesures, procédures) de façon claire et rassurante',
-      'Convertir les urgences / demandes vers un devis sans friction',
+      'Expliquer une offre technique de manière claire pour propriétaires et assureurs',
+      'Convertir les demandes urgentes via confiance et réassurance',
     ],
     results: [
       'Présence digitale professionnelle pour Amiris Leckortung',
