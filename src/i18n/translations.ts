@@ -35,7 +35,7 @@ const fr = {
   'stats.experience.unit': 'ans',
   'stats.experience.description': 'Depuis l’obtention du diplôme',
   'stats.projects.label': 'Projets clés',
-  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC, CuraKissen & Feed',
+  'stats.projects.description': 'Carthage, Amiris, Autoglas, DMC & CuraKissen',
   'stats.education.label': 'Formation',
   'stats.education.unit': 'diplômes',
   'stats.education.description': 'Bac · Licence · Master',
@@ -102,6 +102,8 @@ const fr = {
     'tunisiafeed.com (Tunisie) — magazine digital multilingue : tech, design, culture, business et destinations tunisiennes.',
   'project.amiris-leckortung.tagline':
     'Amiris Leckortung (Allemagne) — site web pour la détection de fuites d’eau : services, mesures et conversion B2C.',
+  'project.autoglas-meister.tagline':
+    'Autoglas Meister (Allemagne) — site web pour le remplacement mobile de vitres auto à Francfort : services, urgence et prise de rendez-vous.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Compétences',
   'skills.description':
@@ -238,7 +240,7 @@ const en: Record<TranslationKey, string> = {
   'stats.experience.unit': 'yrs',
   'stats.experience.description': 'Since graduation',
   'stats.projects.label': 'Key projects',
-  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC, CuraKissen & Feed',
+  'stats.projects.description': 'Carthage, Amiris, Autoglas, DMC & CuraKissen',
   'stats.education.label': 'Education',
   'stats.education.unit': 'degrees',
   'stats.education.description': 'Bac · Bachelor · Master',
@@ -305,6 +307,8 @@ const en: Record<TranslationKey, string> = {
     'tunisiafeed.com (Tunisia) — multilingual digital magazine: tech, design, culture, business, and Tunisian destinations.',
   'project.amiris-leckortung.tagline':
     'Amiris Leckortung (Germany) — website for water leak detection: services, diagnostics, and B2C conversion.',
+  'project.autoglas-meister.tagline':
+    'Autoglas Meister (Germany) — website for mobile car glass replacement in Frankfurt: services, emergency, and booking.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Skills',
   'skills.description':
@@ -439,7 +443,7 @@ const ar: Record<TranslationKey, string> = {
   'stats.experience.unit': 'سنوات',
   'stats.experience.description': 'منذ التخرج',
   'stats.projects.label': 'مشاريع أساسية',
-  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC, CuraKissen & Feed',
+  'stats.projects.description': 'Carthage, Amiris, Autoglas, DMC & CuraKissen',
   'stats.education.label': 'التكوين',
   'stats.education.unit': 'شهادات',
   'stats.education.description': 'باك · إجازة · ماجستير',
@@ -506,6 +510,8 @@ const ar: Record<TranslationKey, string> = {
     'tunisiafeed.com (تونس) — مجلة رقمية متعددة اللغات: تقنية وتصميم وثقافة وأعمال ووجهات تونسية.',
   'project.amiris-leckortung.tagline':
     'Amiris Leckortung (ألمانيا) — موقع كشف تسربات المياه: خدمات وقياسات وتحويل B2C.',
+  'project.autoglas-meister.tagline':
+    'Autoglas Meister (ألمانيا) — موقع لاستبدال زجاج السيارات المتنقل في فرانكفورت: خدمات وطوارئ وحجز مواعيد.',
   'skills.eyebrow': 'الخبرة',
   'skills.title': 'المهارات',
   'skills.description':
@@ -639,7 +645,7 @@ const de: Record<TranslationKey, string> = {
   'stats.experience.unit': 'Jahre',
   'stats.experience.description': 'Seit dem Abschluss',
   'stats.projects.label': 'Schlüsselprojekte',
-  'stats.projects.description': 'Carthage, Amiris, Fensterio, DMC, CuraKissen & Feed',
+  'stats.projects.description': 'Carthage, Amiris, Autoglas, DMC & CuraKissen',
   'stats.education.label': 'Ausbildung',
   'stats.education.unit': 'Abschlüsse',
   'stats.education.description': 'Abitur · Bachelor · Master',
@@ -706,6 +712,8 @@ const de: Record<TranslationKey, string> = {
     'tunisiafeed.com (Tunesien) — mehrsprachiges Digital-Magazin: Tech, Design, Kultur, Business und Reiseziele.',
   'project.amiris-leckortung.tagline':
     'Amiris Leckortung (Deutschland) — Website für Leckortung: Leistungen, Messtechnik und B2C-Conversion.',
+  'project.autoglas-meister.tagline':
+    'Autoglas Meister (Deutschland) — Website für mobilen Scheibenwechsel in Frankfurt: Leistungen, Notdienst und Terminbuchung.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Kompetenzen',
   'skills.description':

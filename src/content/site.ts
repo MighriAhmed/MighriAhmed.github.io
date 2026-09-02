@@ -64,7 +64,7 @@ export const profile = {
 /** Stats derived only from documented career data (CV + LinkedIn). Labels come from i18n. */
 export const stats = [
   { id: 'experience', value: 2, suffix: '+', unit: 'ans' },
-  { id: 'projects', value: 11, suffix: '', unit: '' },
+  { id: 'projects', value: 12, suffix: '', unit: '' },
   { id: 'education', value: 3, suffix: '', unit: 'diplômes' },
   { id: 'stack', value: 15, suffix: '+', unit: 'tech' },
 ] as const;
@@ -664,6 +664,34 @@ export const projects: Project[] = [
     ],
     liveUrl: 'https://amiris-leckortung.de/',
     image: '/images/projects/amiris-leckortung.png',
+    featured: true,
+  },
+  {
+    id: 'autoglas-meister',
+    slug: 'autoglas-meister',
+    name: 'Autoglas Meister',
+    tagline:
+      'Autoglas Meister (Allemagne) — site web pour le remplacement mobile de vitres auto à Francfort : services, urgence et prise de rendez-vous.',
+    description:
+      'Autoglas Meister est une entreprise allemande spécialisée dans le Scheibenwechsel mobile (remplacement de pare-brise et vitres) à Francfort et environs. Conception et développement du site vitrine : prestations PKW/LKW/luxe, parcours de réservation, avis clients, FAQ et formulaire de contact. Live : autoglas-meister.de.',
+    role: 'Développement web, SEO & conversion',
+    technologies: ['Web', 'SEO', 'UI/UX', 'Content'],
+    features: [
+      'Site vitrine orienté Scheibenwechsel mobile et Notdienst',
+      'Prestations pour PKW, LKW, sport et véhicules de luxe',
+      'Parcours de réservation, avis Google et FAQ',
+      'Contact et conversion pour demandes urgentes',
+    ],
+    challenges: [
+      'Mettre en avant le service mobile et la rapidité sans surcharger le message',
+      'Convertir les urgences (casse, steinschlag) vers un rendez-vous clair',
+    ],
+    results: [
+      'Présence digitale professionnelle pour Autoglas Meister',
+      'Site live : autoglas-meister.de',
+    ],
+    liveUrl: 'https://autoglas-meister.de/',
+    image: '/images/projects/autoglas-meister.png',
     featured: true,
   },
 ];
