@@ -607,7 +607,7 @@ export const projects: Project[] = [
       'Site live : curakissen.de',
     ],
     liveUrl: 'https://curakissen.de/',
-    image: '/images/projects/curakissen.png',
+    image: '/images/projects/curakissen.png?v=2',
     featured: true,
   },
   {
