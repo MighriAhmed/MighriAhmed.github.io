@@ -64,7 +64,7 @@ export const profile = {
 /** Stats derived only from documented career data (CV + LinkedIn). Labels come from i18n. */
 export const stats = [
   { id: 'experience', value: 2, suffix: '+', unit: 'ans' },
-  { id: 'projects', value: 12, suffix: '', unit: '' },
+  { id: 'projects', value: 15, suffix: '', unit: '' },
   { id: 'education', value: 3, suffix: '', unit: 'diplômes' },
   { id: 'stack', value: 15, suffix: '+', unit: 'tech' },
 ] as const;
@@ -692,6 +692,90 @@ export const projects: Project[] = [
     ],
     liveUrl: 'https://autoglas-meister.de/',
     image: '/images/projects/autoglas-meister.png',
+    featured: true,
+  },
+  {
+    id: 'sternesammler',
+    slug: 'sternesammler',
+    name: 'SterneSammler',
+    tagline:
+      'SterneSammler (Allemagne) — plateforme SaaS pour collecter des avis clients et récompenser les équipes : QR, points et prémiums.',
+    description:
+      'SterneSammler est une plateforme allemande qui aide les entreprises à collecter plus d’avis clients et à motiver leurs collaborateurs via points et prémiums. Conception et développement du site marketing : parcours produit, plans tarifaires, sections entreprise/employé, app mobile et conversion. Live : sternesammler.de.',
+    role: 'Développement web, SEO & produit digital',
+    technologies: ['Web', 'SEO', 'UI/UX', 'SaaS', 'Content'],
+    features: [
+      'Site marketing SaaS orienté avis clients et gamification',
+      'Parcours en 5 étapes : QR-Code, scan, avis, points, prémie',
+      'Sections entreprises, employés, prémiums et tarifs',
+      'CTA d’inscription et présentation de l’app mobile',
+    ],
+    challenges: [
+      'Expliquer un produit B2B/B2C (avis + récompenses) de façon claire',
+      'Convertir visiteurs vers démarrage gratuit et plans payants',
+    ],
+    results: [
+      'Présence digitale professionnelle pour SterneSammler',
+      'Site live : sternesammler.de',
+    ],
+    liveUrl: 'https://sternesammler.de/',
+    image: '/images/projects/sternesammler.png',
+    featured: true,
+  },
+  {
+    id: 'meubles-el-dar',
+    slug: 'meubles-el-dar',
+    name: 'Meubles El Dar',
+    tagline:
+      'Meubles El Dar (Tunisie) — e-commerce de mobilier premium : catalogue, packs, livraison nationale et paiement à la livraison.',
+    description:
+      'Meubles El Dar est une boutique de meubles et décoration premium en Tunisie. Conception et développement du site e-commerce : catégories (salon, chambre, bureau…), packs, panier, paiement à la livraison, blog d’inspiration et interface multilingue (EN, FR, AR). Live : meubleseldar.com.',
+    role: 'Développement web, SEO & e-commerce',
+    technologies: ['Web', 'E-commerce', 'SEO', 'UI/UX', 'i18n'],
+    features: [
+      'Boutique e-commerce multilingue de mobilier premium',
+      'Catalogue produits, packs chambre et shop by room',
+      'Panier, paiement à la livraison et livraison nationale',
+      'Sections inspiration, avis clients et FAQ',
+    ],
+    challenges: [
+      'Structurer un catalogue meubles clair pour conversion mobile',
+      'Rassurer sur livraison, retours et paiement à la livraison en Tunisie',
+    ],
+    results: [
+      'Présence e-commerce professionnelle pour Meubles El Dar',
+      'Site live : meubleseldar.com',
+    ],
+    liveUrl: 'https://meubleseldar.com/',
+    image: '/images/projects/meubles-el-dar.png',
+    featured: true,
+  },
+  {
+    id: 'tunisia-experiences',
+    slug: 'tunisia-experiences',
+    name: 'Tunisia Experiences',
+    tagline:
+      'Tunisia Experiences (Tunisie) — site de tours et excursions : expériences, destinations, flotte et réservation multilingue.',
+    description:
+      'Tunisia Experiences propose des tours, trips et expériences premium en Tunisie (guides, transport VIP). Conception et développement du site : expériences phares, destinations, flotte, avis, FAQ et réservation, avec interface multilingue (EN, FR, DE, ES). Live : tunisia-experiences.com.',
+    role: 'Développement web, SEO & tourisme digital',
+    technologies: ['Web', 'SEO', 'UI/UX', 'Booking', 'i18n'],
+    features: [
+      'Site tourisme avec expériences, tours et destinations',
+      'Présentation de la flotte et services (privé, scolaire, chauffeur)',
+      'Avis voyageurs, galerie et FAQ',
+      'Parcours de réservation et contact multilingue',
+    ],
+    challenges: [
+      'Mettre en avant une offre touristique riche sans surcharge',
+      'Convertir vers réservation et contact WhatsApp/email',
+    ],
+    results: [
+      'Présence digitale professionnelle pour Tunisia Experiences',
+      'Site live : tunisia-experiences.com',
+    ],
+    liveUrl: 'https://tunisia-experiences.com/',
+    image: '/images/projects/tunisia-experiences.png',
     featured: true,
   },
 ];

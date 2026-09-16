@@ -35,7 +35,7 @@ const fr = {
   'stats.experience.unit': 'ans',
   'stats.experience.description': 'Depuis l’obtention du diplôme',
   'stats.projects.label': 'Projets clés',
-  'stats.projects.description': 'Carthage, Amiris, Autoglas, DMC & CuraKissen',
+  'stats.projects.description': 'Carthage, Amiris, SterneSammler, El Dar & Tours',
   'stats.education.label': 'Formation',
   'stats.education.unit': 'diplômes',
   'stats.education.description': 'Bac · Licence · Master',
@@ -104,6 +104,12 @@ const fr = {
     'Amiris Leckortung (Allemagne) — site web pour la détection de fuites d’eau : services, mesures et conversion B2C.',
   'project.autoglas-meister.tagline':
     'Autoglas Meister (Allemagne) — site web pour le remplacement mobile de vitres auto à Francfort : services, urgence et prise de rendez-vous.',
+  'project.sternesammler.tagline':
+    'SterneSammler (Allemagne) — plateforme SaaS pour collecter des avis clients et récompenser les équipes : QR, points et prémiums.',
+  'project.meubles-el-dar.tagline':
+    'Meubles El Dar (Tunisie) — e-commerce de mobilier premium : catalogue, packs, livraison nationale et paiement à la livraison.',
+  'project.tunisia-experiences.tagline':
+    'Tunisia Experiences (Tunisie) — site de tours et excursions : expériences, destinations, flotte et réservation multilingue.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Compétences',
   'skills.description':
@@ -240,7 +246,7 @@ const en: Record<TranslationKey, string> = {
   'stats.experience.unit': 'yrs',
   'stats.experience.description': 'Since graduation',
   'stats.projects.label': 'Key projects',
-  'stats.projects.description': 'Carthage, Amiris, Autoglas, DMC & CuraKissen',
+  'stats.projects.description': 'Carthage, Amiris, SterneSammler, El Dar & Tours',
   'stats.education.label': 'Education',
   'stats.education.unit': 'degrees',
   'stats.education.description': 'Bac · Bachelor · Master',
@@ -309,6 +315,12 @@ const en: Record<TranslationKey, string> = {
     'Amiris Leckortung (Germany) — website for water leak detection: services, diagnostics, and B2C conversion.',
   'project.autoglas-meister.tagline':
     'Autoglas Meister (Germany) — website for mobile car glass replacement in Frankfurt: services, emergency, and booking.',
+  'project.sternesammler.tagline':
+    'SterneSammler (Germany) — SaaS platform to collect customer reviews and reward teams: QR codes, points, and prizes.',
+  'project.meubles-el-dar.tagline':
+    'Meubles El Dar (Tunisia) — premium furniture e-commerce: catalog, packs, nationwide delivery, and cash on delivery.',
+  'project.tunisia-experiences.tagline':
+    'Tunisia Experiences (Tunisia) — tours and excursions site: experiences, destinations, fleet, and multilingual booking.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Skills',
   'skills.description':
@@ -443,7 +455,7 @@ const ar: Record<TranslationKey, string> = {
   'stats.experience.unit': 'سنوات',
   'stats.experience.description': 'منذ التخرج',
   'stats.projects.label': 'مشاريع أساسية',
-  'stats.projects.description': 'Carthage, Amiris, Autoglas, DMC & CuraKissen',
+  'stats.projects.description': 'Carthage, Amiris, SterneSammler, El Dar & Tours',
   'stats.education.label': 'التكوين',
   'stats.education.unit': 'شهادات',
   'stats.education.description': 'باك · إجازة · ماجستير',
@@ -512,6 +524,12 @@ const ar: Record<TranslationKey, string> = {
     'Amiris Leckortung (ألمانيا) — موقع كشف تسربات المياه: خدمات وقياسات وتحويل B2C.',
   'project.autoglas-meister.tagline':
     'Autoglas Meister (ألمانيا) — موقع لاستبدال زجاج السيارات المتنقل في فرانكفورت: خدمات وطوارئ وحجز مواعيد.',
+  'project.sternesammler.tagline':
+    'SterneSammler (ألمانيا) — منصة SaaS لجمع تقييمات العملاء ومكافأة الفرق: QR ونقاط وجوائز.',
+  'project.meubles-el-dar.tagline':
+    'Meubles El Dar (تونس) — متجر إلكتروني للأثاث الفاخر: كتالوج وباقات وتوصيل وطني والدفع عند الاستلام.',
+  'project.tunisia-experiences.tagline':
+    'Tunisia Experiences (تونس) — موقع جولات ورحلات: تجارب ووجهات وأسطول وحجز متعدد اللغات.',
   'skills.eyebrow': 'الخبرة',
   'skills.title': 'المهارات',
   'skills.description':
@@ -645,7 +663,7 @@ const de: Record<TranslationKey, string> = {
   'stats.experience.unit': 'Jahre',
   'stats.experience.description': 'Seit dem Abschluss',
   'stats.projects.label': 'Schlüsselprojekte',
-  'stats.projects.description': 'Carthage, Amiris, Autoglas, DMC & CuraKissen',
+  'stats.projects.description': 'Carthage, Amiris, SterneSammler, El Dar & Tours',
   'stats.education.label': 'Ausbildung',
   'stats.education.unit': 'Abschlüsse',
   'stats.education.description': 'Abitur · Bachelor · Master',
@@ -714,6 +732,12 @@ const de: Record<TranslationKey, string> = {
     'Amiris Leckortung (Deutschland) — Website für Leckortung: Leistungen, Messtechnik und B2C-Conversion.',
   'project.autoglas-meister.tagline':
     'Autoglas Meister (Deutschland) — Website für mobilen Scheibenwechsel in Frankfurt: Leistungen, Notdienst und Terminbuchung.',
+  'project.sternesammler.tagline':
+    'SterneSammler (Deutschland) — SaaS-Plattform für Kundenbewertungen und Mitarbeiterbelohnung: QR-Codes, Punkte und Prämien.',
+  'project.meubles-el-dar.tagline':
+    'Meubles El Dar (Tunesien) — Premium-Möbel-E-Commerce: Katalog, Packs, landesweite Lieferung und Zahlung bei Lieferung.',
+  'project.tunisia-experiences.tagline':
+    'Tunisia Experiences (Tunesien) — Website für Touren und Ausflüge: Erlebnisse, Destinationen, Flotte und mehrsprachige Buchung.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Kompetenzen',
   'skills.description':
