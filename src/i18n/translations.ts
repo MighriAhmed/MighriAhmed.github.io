@@ -35,7 +35,7 @@ const fr = {
   'stats.experience.unit': 'ans',
   'stats.experience.description': 'Depuis l’obtention du diplôme',
   'stats.projects.label': 'Projets clés',
-  'stats.projects.description': 'Carthage, Amiris, SterneSammler, El Dar & Tours',
+  'stats.projects.description': 'Carthage, Melcar, SterneSammler, El Dar & Tours',
   'stats.education.label': 'Formation',
   'stats.education.unit': 'diplômes',
   'stats.education.description': 'Bac · Licence · Master',
@@ -110,6 +110,8 @@ const fr = {
     'Meubles El Dar (Tunisie) — e-commerce de mobilier premium : catalogue, packs, livraison nationale et paiement à la livraison.',
   'project.tunisia-experiences.tagline':
     'Tunisia Experiences (Tunisie) — site de tours et excursions : expériences, destinations, flotte et réservation multilingue.',
+  'project.melcar-group.tagline':
+    'Melcar Group (Tunisie) — site tourisme international : destinations, expériences, packages et voyages sur mesure.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Compétences',
   'skills.description':
@@ -246,7 +248,7 @@ const en: Record<TranslationKey, string> = {
   'stats.experience.unit': 'yrs',
   'stats.experience.description': 'Since graduation',
   'stats.projects.label': 'Key projects',
-  'stats.projects.description': 'Carthage, Amiris, SterneSammler, El Dar & Tours',
+  'stats.projects.description': 'Carthage, Melcar, SterneSammler, El Dar & Tours',
   'stats.education.label': 'Education',
   'stats.education.unit': 'degrees',
   'stats.education.description': 'Bac · Bachelor · Master',
@@ -321,6 +323,8 @@ const en: Record<TranslationKey, string> = {
     'Meubles El Dar (Tunisia) — premium furniture e-commerce: catalog, packs, nationwide delivery, and cash on delivery.',
   'project.tunisia-experiences.tagline':
     'Tunisia Experiences (Tunisia) — tours and excursions site: experiences, destinations, fleet, and multilingual booking.',
+  'project.melcar-group.tagline':
+    'Melcar Group (Tunisia) — international tourism website: destinations, experiences, packages, and tailor-made journeys.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Skills',
   'skills.description':
@@ -455,7 +459,7 @@ const ar: Record<TranslationKey, string> = {
   'stats.experience.unit': 'سنوات',
   'stats.experience.description': 'منذ التخرج',
   'stats.projects.label': 'مشاريع أساسية',
-  'stats.projects.description': 'Carthage, Amiris, SterneSammler, El Dar & Tours',
+  'stats.projects.description': 'Carthage, Melcar, SterneSammler, El Dar & Tours',
   'stats.education.label': 'التكوين',
   'stats.education.unit': 'شهادات',
   'stats.education.description': 'باك · إجازة · ماجستير',
@@ -530,6 +534,8 @@ const ar: Record<TranslationKey, string> = {
     'Meubles El Dar (تونس) — متجر إلكتروني للأثاث الفاخر: كتالوج وباقات وتوصيل وطني والدفع عند الاستلام.',
   'project.tunisia-experiences.tagline':
     'Tunisia Experiences (تونس) — موقع جولات ورحلات: تجارب ووجهات وأسطول وحجز متعدد اللغات.',
+  'project.melcar-group.tagline':
+    'Melcar Group (تونس) — موقع سياحة دولية: وجهات وتجارب وباقات ورحلات مخصصة.',
   'skills.eyebrow': 'الخبرة',
   'skills.title': 'المهارات',
   'skills.description':
@@ -663,7 +669,7 @@ const de: Record<TranslationKey, string> = {
   'stats.experience.unit': 'Jahre',
   'stats.experience.description': 'Seit dem Abschluss',
   'stats.projects.label': 'Schlüsselprojekte',
-  'stats.projects.description': 'Carthage, Amiris, SterneSammler, El Dar & Tours',
+  'stats.projects.description': 'Carthage, Melcar, SterneSammler, El Dar & Tours',
   'stats.education.label': 'Ausbildung',
   'stats.education.unit': 'Abschlüsse',
   'stats.education.description': 'Abitur · Bachelor · Master',
@@ -738,6 +744,8 @@ const de: Record<TranslationKey, string> = {
     'Meubles El Dar (Tunesien) — Premium-Möbel-E-Commerce: Katalog, Packs, landesweite Lieferung und Zahlung bei Lieferung.',
   'project.tunisia-experiences.tagline':
     'Tunisia Experiences (Tunesien) — Website für Touren und Ausflüge: Erlebnisse, Destinationen, Flotte und mehrsprachige Buchung.',
+  'project.melcar-group.tagline':
+    'Melcar Group (Tunesien) — Website für internationalen Tourismus: Destinationen, Erlebnisse, Pakete und maßgeschneiderte Reisen.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Kompetenzen',
   'skills.description':

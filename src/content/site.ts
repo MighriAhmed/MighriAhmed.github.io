@@ -64,7 +64,7 @@ export const profile = {
 /** Stats derived only from documented career data (CV + LinkedIn). Labels come from i18n. */
 export const stats = [
   { id: 'experience', value: 2, suffix: '+', unit: 'ans' },
-  { id: 'projects', value: 15, suffix: '', unit: '' },
+  { id: 'projects', value: 16, suffix: '', unit: '' },
   { id: 'education', value: 3, suffix: '', unit: 'diplômes' },
   { id: 'stack', value: 15, suffix: '+', unit: 'tech' },
 ] as const;
@@ -776,6 +776,34 @@ export const projects: Project[] = [
     ],
     liveUrl: 'https://tunisia-experiences.com/',
     image: '/images/projects/tunisia-experiences.png',
+    featured: true,
+  },
+  {
+    id: 'melcar-group',
+    slug: 'melcar-group',
+    name: 'Melcar Group',
+    tagline:
+      'Melcar Group (Tunisie) — site tourisme international : destinations, expériences, packages et voyages sur mesure.',
+    description:
+      'Melcar Group est une société de tourisme international basée à Tunis. Conception et développement du site vitrine premium : destinations mondiales, services (tours, business travel, transferts), expériences, témoignages et formulaire de contact, avec interface multilingue (EN, FR, DE, IT, ES). Live : melcar-group.com.',
+    role: 'Développement web, SEO & tourisme digital',
+    technologies: ['Web', 'SEO', 'UI/UX', 'Content', 'i18n'],
+    features: [
+      'Site vitrine tourisme international multilingue',
+      'Sections destinations, services et expériences',
+      'Témoignages clients et parcours de contact',
+      'Positionnement premium Tunisie → monde',
+    ],
+    challenges: [
+      'Mettre en avant une offre mondiale sans diluer l’identité de marque',
+      'Convertir vers demandes de voyage et contact conseiller',
+    ],
+    results: [
+      'Présence digitale professionnelle pour Melcar Group',
+      'Site live : melcar-group.com',
+    ],
+    liveUrl: 'https://www.melcar-group.com/',
+    image: '/images/projects/melcar-group.png',
     featured: true,
   },
 ];
