@@ -383,7 +383,7 @@ export const projects: Project[] = [
       'Site maintenu et optimisé pour la performance et le SEO',
     ],
     liveUrl: 'https://carthage-transfer.com/',
-    image: '/images/projects/carthage-transfer.png',
+    image: '/images/projects/carthage-transfer.png?v=3',
     featured: true,
   },
   {
@@ -391,7 +391,7 @@ export const projects: Project[] = [
     slug: 'amiris-group',
     name: 'Amiris Group',
     tagline:
-      'Amiris Group (Allemagne) — site vitrine pour la gestion immobilière : administration de biens, courtage et conseil.',
+      'Amiris Group (Allemagne) — site vitrine premium pour une société immobilière : biens, courtage, investissement et conseil.',
     description:
       'Amiris Group est une société immobilière allemande (administration de biens, courtage, investissement et conseil). Conception et développement de son site vitrine premium : identité soignée, navigation claire et présentation des services pour renforcer crédibilité et conversion. Live : amirisgroup.com.',
     role: 'Développement web & design digital',
@@ -411,7 +411,7 @@ export const projects: Project[] = [
       'Site live : amirisgroup.com',
     ],
     liveUrl: 'https://amirisgroup.com/',
-    image: '/images/projects/amiris-group.png?v=2',
+    image: '/images/projects/amiris-group.png?v=3',
     featured: true,
   },
   {
@@ -419,7 +419,7 @@ export const projects: Project[] = [
     slug: 'amiris-badsanierung',
     name: 'Amiris Badsanierung',
     tagline:
-      'Amiris Badsanierung (Allemagne) — site pour la rénovation de salles de bains en Allemagne : planification, artisanat et conversion.',
+      'Amiris Badsanierung (Allemagne) — site web premium pour la rénovation de salles de bains : planification, artisanat et conversion.',
     description:
       'Amiris Badsanierung est une entreprise allemande spécialisée dans la rénovation premium de salles de bains (sanitaires, douches walk-in, carrelage, accessibilité). Conception et développement du site vitrine : présentation des prestations, projets avant/après, parcours client en 5 étapes, avis et formulaire de conseil gratuit. Live : amiris-badsanierung.de.',
     role: 'Développement web, SEO & conversion',
@@ -439,7 +439,7 @@ export const projects: Project[] = [
       'Site live : amiris-badsanierung.de',
     ],
     liveUrl: 'https://amiris-badsanierung.de/',
-    image: '/images/projects/amiris-badsanierung.png?v=2',
+    image: '/images/projects/amiris-badsanierung.png?v=3',
     featured: true,
   },
   {
@@ -467,7 +467,7 @@ export const projects: Project[] = [
       'Site live : fensterio.com',
     ],
     liveUrl: 'https://fensterio.com/',
-    image: '/images/projects/fensterio.png',
+    image: '/images/projects/fensterio.png?v=3',
     featured: true,
   },
   {
@@ -495,7 +495,7 @@ export const projects: Project[] = [
       'Présence digitale claire pour Airport Transfers Djerba',
     ],
     liveUrl: 'https://djerba-airport-transfers.com/',
-    image: '/images/projects/djerba-airport-transfers.png',
+    image: '/images/projects/djerba-airport-transfers.png?v=3',
     featured: true,
   },
   {
@@ -523,7 +523,7 @@ export const projects: Project[] = [
       'Présence digitale renforcée pour Airport Transfers Tunisia',
     ],
     liveUrl: 'https://airporttransfertunisia.com/',
-    image: '/images/projects/airport-transfers-tunisia.png',
+    image: '/images/projects/airport-transfers-tunisia.png?v=3',
     featured: true,
   },
   {
