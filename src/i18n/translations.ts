@@ -83,9 +83,9 @@ const fr = {
   'project.carthage-transfer.tagline':
     'Carthage Transfer (Tunisie) — site web, SEO et automatisation pour un service de transferts VIP et navettes aéroport.',
   'project.amiris-group.tagline':
-    'Amiris Group (Allemagne) — site vitrine pour la gestion immobilière : administration de biens, courtage et conseil.',
+    'Amiris Group (Allemagne) — site vitrine premium pour une société immobilière : biens, courtage, investissement et conseil.',
   'project.amiris-badsanierung.tagline':
-    'Amiris Badsanierung (Allemagne) — site pour la rénovation de salles de bains en Allemagne : planification, artisanat et conversion.',
+    'Amiris Badsanierung (Allemagne) — site web premium pour la rénovation de salles de bains : planification, artisanat et conversion.',
   'project.fensterio.tagline':
     'Fensterio (Allemagne) — site web et marketing digital pour un spécialiste fenêtres, portes, volets et protection solaire.',
   'project.djerba-airport-transfers.tagline':
@@ -296,9 +296,9 @@ const en: Record<TranslationKey, string> = {
   'project.carthage-transfer.tagline':
     'Carthage Transfer (Tunisia) — website, SEO, and automation for a VIP transfer and airport shuttle service.',
   'project.amiris-group.tagline':
-    'Amiris Group (Germany) — showcase site for property management: administration, brokerage, and consulting.',
+    'Amiris Group (Germany) — premium showcase site for a real-estate company: property, brokerage, investment, and consulting.',
   'project.amiris-badsanierung.tagline':
-    'Amiris Badsanierung (Germany) — website for bathroom renovation across Germany: planning, craftsmanship, and conversion.',
+    'Amiris Badsanierung (Germany) — premium website for bathroom renovation: planning, craftsmanship, and conversion.',
   'project.fensterio.tagline':
     'Fensterio (Germany) — website and digital marketing for a windows, doors, shutters, and sun-protection specialist.',
   'project.djerba-airport-transfers.tagline':
@@ -507,9 +507,9 @@ const ar: Record<TranslationKey, string> = {
   'project.carthage-transfer.tagline':
     'Carthage Transfer (تونس) — موقع ويب وSEO وأتمتة لخدمة نقل VIP وحافلات المطار.',
   'project.amiris-group.tagline':
-    'Amiris Group (ألمانيا) — موقع لإدارة العقارات: تسيير الأملاك والوساطة والاستشارة.',
+    'Amiris Group (ألمانيا) — موقع عرض فاخر لشركة عقارية: إدارة أملاك ووساطة واستثمار واستشارة.',
   'project.amiris-badsanierung.tagline':
-    'Amiris Badsanierung (ألمانيا) — موقع لتجديد الحمامات في ألمانيا: تخطيط وحرفية وتحويل.',
+    'Amiris Badsanierung (ألمانيا) — موقع ويب فاخر لتجديد الحمامات: تخطيط وحرفية وتحويل.',
   'project.fensterio.tagline':
     'Fensterio (ألمانيا) — موقع ويب وتسويق رقمي لمتخصص نوافذ وأبواب ومصاريع وحماية شمسية.',
   'project.djerba-airport-transfers.tagline':
@@ -717,9 +717,9 @@ const de: Record<TranslationKey, string> = {
   'project.carthage-transfer.tagline':
     'Carthage Transfer (Tunesien) — Website, SEO und Automatisierung für VIP-Transfers und Flughafen-Shuttles.',
   'project.amiris-group.tagline':
-    'Amiris Group (Deutschland) — Website für Immobilienverwaltung: Verwaltung, Vermittlung und Beratung.',
+    'Amiris Group (Deutschland) — Premium-Website für eine Immobilienfirma: Verwaltung, Makler, Investment und Beratung.',
   'project.amiris-badsanierung.tagline':
-    'Amiris Badsanierung (Deutschland) — Website für Badsanierung und Badrenovierung in Deutschland: Planung, Handwerk und Conversion.',
+    'Amiris Badsanierung (Deutschland) — Premium-Website für Badrenovierung: Planung, Handwerk und Conversion.',
   'project.fensterio.tagline':
     'Fensterio (Deutschland) — Website und digitales Marketing für einen Spezialisten für Fenster, Türen, Rollläden und Sonnenschutz.',
   'project.djerba-airport-transfers.tagline':
