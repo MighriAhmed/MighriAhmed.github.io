@@ -383,7 +383,7 @@ export const projects: Project[] = [
       'Site maintenu et optimisé pour la performance et le SEO',
     ],
     liveUrl: 'https://carthage-transfer.com/',
-    image: '/images/projects/carthage-transfer.png?v=3',
+    image: '/images/projects/carthage-transfer.png?v=4',
     featured: true,
   },
   {
@@ -411,7 +411,7 @@ export const projects: Project[] = [
       'Site live : amirisgroup.com',
     ],
     liveUrl: 'https://amirisgroup.com/',
-    image: '/images/projects/amiris-group.png?v=3',
+    image: '/images/projects/amiris-group.png?v=4',
     featured: true,
   },
   {
@@ -439,7 +439,7 @@ export const projects: Project[] = [
       'Site live : amiris-badsanierung.de',
     ],
     liveUrl: 'https://amiris-badsanierung.de/',
-    image: '/images/projects/amiris-badsanierung.png?v=3',
+    image: '/images/projects/amiris-badsanierung.png?v=4',
     featured: true,
   },
   {
@@ -467,7 +467,7 @@ export const projects: Project[] = [
       'Site live : fensterio.com',
     ],
     liveUrl: 'https://fensterio.com/',
-    image: '/images/projects/fensterio.png?v=3',
+    image: '/images/projects/fensterio.png?v=4',
     featured: true,
   },
   {
@@ -495,7 +495,7 @@ export const projects: Project[] = [
       'Présence digitale claire pour Airport Transfers Djerba',
     ],
     liveUrl: 'https://djerba-airport-transfers.com/',
-    image: '/images/projects/djerba-airport-transfers.png?v=3',
+    image: '/images/projects/djerba-airport-transfers.png?v=4',
     featured: true,
   },
   {
@@ -523,7 +523,7 @@ export const projects: Project[] = [
       'Présence digitale renforcée pour Airport Transfers Tunisia',
     ],
     liveUrl: 'https://airporttransfertunisia.com/',
-    image: '/images/projects/airport-transfers-tunisia.png?v=3',
+    image: '/images/projects/airport-transfers-tunisia.png?v=4',
     featured: true,
   },
   {
@@ -551,7 +551,7 @@ export const projects: Project[] = [
       'Site live : carthage-dmc.com',
     ],
     liveUrl: 'https://carthage-dmc.com/',
-    image: '/images/projects/carthage-dmc.png',
+    image: '/images/projects/carthage-dmc.png?v=4',
     featured: true,
   },
   {
@@ -579,7 +579,7 @@ export const projects: Project[] = [
       'Site live : carthage-global-services.com',
     ],
     liveUrl: 'https://carthage-global-services.com/',
-    image: '/images/projects/carthage-global-services.png',
+    image: '/images/projects/carthage-global-services.png?v=4',
     featured: true,
   },
   {
@@ -607,7 +607,7 @@ export const projects: Project[] = [
       'Site live : curakissen.de',
     ],
     liveUrl: 'https://curakissen.de/',
-    image: '/images/projects/curakissen.png?v=2',
+    image: '/images/projects/curakissen.png?v=4',
     featured: true,
   },
   {
@@ -635,7 +635,7 @@ export const projects: Project[] = [
       'Site live : tunisiafeed.com',
     ],
     liveUrl: 'https://tunisiafeed.com/',
-    image: '/images/projects/tunisiafeed.png',
+    image: '/images/projects/tunisiafeed.png?v=4',
     featured: true,
   },
   {
@@ -663,7 +663,7 @@ export const projects: Project[] = [
       'Site live : amiris-leckortung.de',
     ],
     liveUrl: 'https://amiris-leckortung.de/',
-    image: '/images/projects/amiris-leckortung.png',
+    image: '/images/projects/amiris-leckortung.png?v=4',
     featured: true,
   },
   {
@@ -691,7 +691,7 @@ export const projects: Project[] = [
       'Site live : autoglas-meister.de',
     ],
     liveUrl: 'https://autoglas-meister.de/',
-    image: '/images/projects/autoglas-meister.png',
+    image: '/images/projects/autoglas-meister.png?v=4',
     featured: true,
   },
   {
@@ -719,7 +719,7 @@ export const projects: Project[] = [
       'Site live : sternesammler.de',
     ],
     liveUrl: 'https://sternesammler.de/',
-    image: '/images/projects/sternesammler.png',
+    image: '/images/projects/sternesammler.png?v=4',
     featured: true,
   },
   {
@@ -747,7 +747,7 @@ export const projects: Project[] = [
       'Site live : meubleseldar.com',
     ],
     liveUrl: 'https://meubleseldar.com/',
-    image: '/images/projects/meubles-el-dar.png',
+    image: '/images/projects/meubles-el-dar.png?v=4',
     featured: true,
   },
   {
@@ -775,7 +775,7 @@ export const projects: Project[] = [
       'Site live : tunisia-experiences.com',
     ],
     liveUrl: 'https://tunisia-experiences.com/',
-    image: '/images/projects/tunisia-experiences.png',
+    image: '/images/projects/tunisia-experiences.png?v=4',
     featured: true,
   },
   {
@@ -803,7 +803,7 @@ export const projects: Project[] = [
       'Site live : melcar-group.com',
     ],
     liveUrl: 'https://www.melcar-group.com/',
-    image: '/images/projects/melcar-group.png',
+    image: '/images/projects/melcar-group.png?v=4',
     featured: true,
   },
 ];
