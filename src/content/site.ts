@@ -391,7 +391,7 @@ export const projects: Project[] = [
     slug: 'amiris-group',
     name: 'Amiris Group',
     tagline:
-      'Amiris Group (Allemagne) — site vitrine premium pour une société immobilière : biens, courtage, investissement et conseil.',
+      'Amiris Group (Allemagne) — site vitrine pour la gestion immobilière : administration de biens, courtage et conseil.',
     description:
       'Amiris Group est une société immobilière allemande (administration de biens, courtage, investissement et conseil). Conception et développement de son site vitrine premium : identité soignée, navigation claire et présentation des services pour renforcer crédibilité et conversion. Live : amirisgroup.com.',
     role: 'Développement web & design digital',
@@ -411,7 +411,7 @@ export const projects: Project[] = [
       'Site live : amirisgroup.com',
     ],
     liveUrl: 'https://amirisgroup.com/',
-    image: '/images/projects/amiris-group.png',
+    image: '/images/projects/amiris-group.png?v=2',
     featured: true,
   },
   {
@@ -419,7 +419,7 @@ export const projects: Project[] = [
     slug: 'amiris-badsanierung',
     name: 'Amiris Badsanierung',
     tagline:
-      'Amiris Badsanierung (Allemagne) — site web premium pour la rénovation de salles de bains : planification, artisanat et conversion.',
+      'Amiris Badsanierung (Allemagne) — site pour la rénovation de salles de bains en Allemagne : planification, artisanat et conversion.',
     description:
       'Amiris Badsanierung est une entreprise allemande spécialisée dans la rénovation premium de salles de bains (sanitaires, douches walk-in, carrelage, accessibilité). Conception et développement du site vitrine : présentation des prestations, projets avant/après, parcours client en 5 étapes, avis et formulaire de conseil gratuit. Live : amiris-badsanierung.de.',
     role: 'Développement web, SEO & conversion',
@@ -439,7 +439,7 @@ export const projects: Project[] = [
       'Site live : amiris-badsanierung.de',
     ],
     liveUrl: 'https://amiris-badsanierung.de/',
-    image: '/images/projects/amiris-badsanierung.png',
+    image: '/images/projects/amiris-badsanierung.png?v=2',
     featured: true,
   },
   {
