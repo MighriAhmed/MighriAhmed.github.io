@@ -64,7 +64,7 @@ export const profile = {
 /** Stats derived only from documented career data (CV + LinkedIn). Labels come from i18n. */
 export const stats = [
   { id: 'experience', value: 2, suffix: '+', unit: 'ans' },
-  { id: 'projects', value: 16, suffix: '', unit: '' },
+  { id: 'projects', value: 17, suffix: '', unit: '' },
   { id: 'education', value: 3, suffix: '', unit: 'diplômes' },
   { id: 'stack', value: 15, suffix: '+', unit: 'tech' },
 ] as const;
@@ -804,6 +804,34 @@ export const projects: Project[] = [
     ],
     liveUrl: 'https://www.melcar-group.com/',
     image: '/images/projects/melcar-group.png?v=4',
+    featured: true,
+  },
+  {
+    id: 'omnia-focus',
+    slug: 'omnia-focus',
+    name: 'Omnia Focus',
+    tagline:
+      'Omnia Focus (Tunisie) — site IT & digital : web, CRM, SEO, Google Ads et support client pour les entreprises.',
+    description:
+      'Omnia Focus est une société IT tunisienne spécialisée en développement web, CRM sur mesure, SEO, Google Ads et support client. Conception et développement du site vitrine : services, processus, témoignages, FAQ et formulaire de contact, avec interface bilingue (EN, DE). Live : omnia-focus.com.',
+    role: 'Développement web, SEO & conversion',
+    technologies: ['Web', 'SEO', 'UI/UX', 'Content', 'i18n'],
+    features: [
+      'Site vitrine IT / digital agency multilingue',
+      'Présentation des services : web, CRM, SEO, Ads, support',
+      'Processus, témoignages clients et FAQ',
+      'Parcours de contact et demande de devis',
+    ],
+    challenges: [
+      'Clarifier une offre multi-services sans diluer le positionnement',
+      'Convertir vers consultation et devis depuis le site',
+    ],
+    results: [
+      'Présence digitale professionnelle pour Omnia Focus',
+      'Site live : omnia-focus.com',
+    ],
+    liveUrl: 'https://omnia-focus.com/',
+    image: '/images/projects/omnia-focus.png',
     featured: true,
   },
 ];

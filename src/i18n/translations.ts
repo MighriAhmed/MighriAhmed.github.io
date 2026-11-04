@@ -35,7 +35,7 @@ const fr = {
   'stats.experience.unit': 'ans',
   'stats.experience.description': 'Depuis l’obtention du diplôme',
   'stats.projects.label': 'Projets clés',
-  'stats.projects.description': 'Carthage, Melcar, SterneSammler, El Dar & Tours',
+  'stats.projects.description': 'Carthage, Melcar, Omnia Focus, El Dar & Tours',
   'stats.education.label': 'Formation',
   'stats.education.unit': 'diplômes',
   'stats.education.description': 'Bac · Licence · Master',
@@ -112,6 +112,8 @@ const fr = {
     'Tunisia Experiences (Tunisie) — site de tours et excursions : expériences, destinations, flotte et réservation multilingue.',
   'project.melcar-group.tagline':
     'Melcar Group (Tunisie) — site tourisme international : destinations, expériences, packages et voyages sur mesure.',
+  'project.omnia-focus.tagline':
+    'Omnia Focus (Tunisie) — site IT & digital : web, CRM, SEO, Google Ads et support client pour les entreprises.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Compétences',
   'skills.description':
@@ -248,7 +250,7 @@ const en: Record<TranslationKey, string> = {
   'stats.experience.unit': 'yrs',
   'stats.experience.description': 'Since graduation',
   'stats.projects.label': 'Key projects',
-  'stats.projects.description': 'Carthage, Melcar, SterneSammler, El Dar & Tours',
+  'stats.projects.description': 'Carthage, Melcar, Omnia Focus, El Dar & Tours',
   'stats.education.label': 'Education',
   'stats.education.unit': 'degrees',
   'stats.education.description': 'Bac · Bachelor · Master',
@@ -325,6 +327,8 @@ const en: Record<TranslationKey, string> = {
     'Tunisia Experiences (Tunisia) — tours and excursions site: experiences, destinations, fleet, and multilingual booking.',
   'project.melcar-group.tagline':
     'Melcar Group (Tunisia) — international tourism website: destinations, experiences, packages, and tailor-made journeys.',
+  'project.omnia-focus.tagline':
+    'Omnia Focus (Tunisia) — IT & digital website: web, CRM, SEO, Google Ads, and client support for businesses.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Skills',
   'skills.description':
@@ -459,7 +463,7 @@ const ar: Record<TranslationKey, string> = {
   'stats.experience.unit': 'سنوات',
   'stats.experience.description': 'منذ التخرج',
   'stats.projects.label': 'مشاريع أساسية',
-  'stats.projects.description': 'Carthage, Melcar, SterneSammler, El Dar & Tours',
+  'stats.projects.description': 'Carthage, Melcar, Omnia Focus, El Dar & Tours',
   'stats.education.label': 'التكوين',
   'stats.education.unit': 'شهادات',
   'stats.education.description': 'باك · إجازة · ماجستير',
@@ -536,6 +540,8 @@ const ar: Record<TranslationKey, string> = {
     'Tunisia Experiences (تونس) — موقع جولات ورحلات: تجارب ووجهات وأسطول وحجز متعدد اللغات.',
   'project.melcar-group.tagline':
     'Melcar Group (تونس) — موقع سياحة دولية: وجهات وتجارب وباقات ورحلات مخصصة.',
+  'project.omnia-focus.tagline':
+    'Omnia Focus (تونس) — موقع IT ورقمي: ويب وCRM وSEO وGoogle Ads ودعم العملاء للشركات.',
   'skills.eyebrow': 'الخبرة',
   'skills.title': 'المهارات',
   'skills.description':
@@ -669,7 +675,7 @@ const de: Record<TranslationKey, string> = {
   'stats.experience.unit': 'Jahre',
   'stats.experience.description': 'Seit dem Abschluss',
   'stats.projects.label': 'Schlüsselprojekte',
-  'stats.projects.description': 'Carthage, Melcar, SterneSammler, El Dar & Tours',
+  'stats.projects.description': 'Carthage, Melcar, Omnia Focus, El Dar & Tours',
   'stats.education.label': 'Ausbildung',
   'stats.education.unit': 'Abschlüsse',
   'stats.education.description': 'Abitur · Bachelor · Master',
@@ -746,6 +752,8 @@ const de: Record<TranslationKey, string> = {
     'Tunisia Experiences (Tunesien) — Website für Touren und Ausflüge: Erlebnisse, Destinationen, Flotte und mehrsprachige Buchung.',
   'project.melcar-group.tagline':
     'Melcar Group (Tunesien) — Website für internationalen Tourismus: Destinationen, Erlebnisse, Pakete und maßgeschneiderte Reisen.',
+  'project.omnia-focus.tagline':
+    'Omnia Focus (Tunesien) — IT- & Digital-Website: Web, CRM, SEO, Google Ads und Kundensupport für Unternehmen.',
   'skills.eyebrow': 'Expertise',
   'skills.title': 'Kompetenzen',
   'skills.description':
